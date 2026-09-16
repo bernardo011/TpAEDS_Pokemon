@@ -19,6 +19,7 @@ CapturaPokemon(Treinador *trainer, Pokemon *poke);
 RetiraListaTreinador(Treinador *trainer, PokeLista *listacentro);
 ImprimeTrainador(Treinador *trainer);
 getIdTreinador(Treinador *trainer);
-getNomeTreinador(Treinador *trainer);
+setIdTreinador(Treinador *trainer);
+setNomeTreinador(Treinador *trainer);
 
 #endif

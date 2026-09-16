@@ -13,13 +13,11 @@ typedef struct treinador {
 
 } Treinador;
 
-InicializaTreinador(Treinador *trainer);
-MovimentaTreinador(Treinador *trainer, int position[2]);
-CapturaPokemon(Treinador *trainer, Pokemon *poke);
-RetiraListaTreinador(Treinador *trainer, PokeLista *listacentro);
-ImprimeTrainador(Treinador *trainer);
-getIdTreinador(Treinador *trainer);
-setIdTreinador(Treinador *trainer);
-setNomeTreinador(Treinador *trainer);
+void InicializaTreinador(Treinador *trainer);
+void MovimentaTreinador(Treinador *trainer, int position[2]);
+void CapturaPokemon(Treinador *trainer, Pokemon *poke);
+void RetiraListaTreinador(Treinador *trainer, PokeLista *listacentro);
+void ImprimeTrainador(Treinador *trainer);
+int getIdTreinador(Treinador *trainer);
 
 #endif

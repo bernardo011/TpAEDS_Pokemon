@@ -2,7 +2,8 @@
 #define POKELISTA_H
 typedef struct pokemon Pokemon;
 typedef struct pokelista PokeLista{
-
+    int placeholder[10];
+    int ultimo;
 } PokeLista;
 
 void InicializaPokeLista(PokeLista *lista);

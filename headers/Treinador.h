@@ -13,11 +13,11 @@ typedef struct treinador {
 
 } Treinador;
 
-void InicializaTreinador(Treinador *trainer);
-void MovimentaTreinador(Treinador *trainer, int position[2]);
+void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2, FILE *p);
+void MovimentaTreinador(Treinador *trainer, int position[]);
 void CapturaPokemon(Treinador *trainer, Pokemon *poke);
 void RetiraListaTreinador(Treinador *trainer, PokeLista *listacentro);
-void ImprimeTrainador(Treinador *trainer);
+void ImprimeTreinador(Treinador *trainer);
 int getIdTreinador(Treinador *trainer);
 
 #endif

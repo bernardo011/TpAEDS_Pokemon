@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/aedstp.dir/link.d CMakeFiles/aedstp.dir/main.c.o CMakeFiles/aedstp.dir/sources/PokeLista.c.o CMakeFiles/aedstp.dir/sources/Treinador.c.o -o aedstp

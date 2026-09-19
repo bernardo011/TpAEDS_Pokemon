@@ -16,7 +16,7 @@ void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2){
                 trainer1 -> QtdPokebolas = pokebolas;
                 strcpy ((*trainer1).nome, nomeTreinador);
                 trainer1 -> id_trainer = 1;
-                InicializaPokeLista (&((*trainer1).ListaCapturados));
+                InicializaLista (&((*trainer1).ListaCapturados));
                 trainer1 -> coordenada_treinador[0] = 0;
                 trainer1 -> coordenada_treinador[1] = 0;
             } else if (index == 1){
@@ -25,7 +25,7 @@ void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2){
                 trainer2 -> id_trainer = 2;
                 trainer2 -> coordenada_treinador[0] = 0;
                 trainer2 -> coordenada_treinador[1] = 0;
-                InicializaPokeLista (&((*trainer2).ListaCapturados));
+                InicializaLista (&((*trainer2).ListaCapturados));
             }
             index++;
     }

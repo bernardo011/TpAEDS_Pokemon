@@ -6,31 +6,26 @@
 int main(){
     Treinador trainer1;
     Treinador trainer2;
+    Lista lista_capturados;
     InicializaTreinadores(&trainer1, &trainer2);
     ImprimeTreinador (&trainer1);
-    ImprimeTreinador(&trainer2);
-    int cordenadas[2] = {6, 7};
-    MovimentaTreinador (&trainer1, cordenadas);
+    ImprimeTreinador (&trainer2);
+    Pokemon lopunny;
+    int id = 5;
+    int pokedex = 169;
+    char nome[50] = "Lopunny";
+    char tipo[50] = "Safada";
+    int coordenadas[2] = {1, 2};
+    InicializaPokemon(&lopunny, id, pokedex, nome, tipo, coordenadas);
+    InserePokemon(&trainer1.ListaCapturados, &lopunny);
     ImprimeTreinador(&trainer1);
-    ImprimeTreinador(&trainer2);
-    int id1 = getIdTreinador (&trainer1);
-    int id2 = getIdTreinador(&trainer2);
-    printf("Id 1: %d\n", id1);
-    printf("Id 2: %d\n", id2);
-    int c1[2];
-    int c2[2];
-    
-    getCoordenadaTreinador (&trainer1, c1);
-    getCoordenadaTreinador (&trainer2, c2);
-    printf("(%d, %d)\n", c1[0], c1[1]);
-    printf("(%d, %d)\n", c2[0], c2[1]);
-
-    char nome_place[50];
-    getNomeTreinador (&trainer1, nome_place);
-    printf("%s", nome_place);
-    int id;
-    id = getIdTreinador (&trainer1);
-    printf("Id: %d", id);
-
+    id = 10;
+    pokedex = 167;
+    char nome_2[50] = "Metagross";
+    char tipo_2[50] = "Steel";
+    int coordenadas_2[2] = {5, 6};
+    InicializaPokemon(&lopunny, id, pokedex, nome_2, tipo_2, coordenadas_2);
+    InserePokemon(&trainer1.ListaCapturados, &lopunny);
+    ImprimeTreinador(&trainer1);
     return 0;
 }

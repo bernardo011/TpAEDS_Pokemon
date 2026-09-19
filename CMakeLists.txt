@@ -10,5 +10,6 @@ set(SOURCES
     main.c
     sources/PokeLista.c
     sources/Treinador.c
+    sources/Pokemon.c
 )
 add_executable(aedstp ${SOURCES})

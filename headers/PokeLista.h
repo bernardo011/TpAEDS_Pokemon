@@ -2,18 +2,22 @@
 #define POKELISTA_H
 #include "Pokemon.h"
 
+typedef struct lista{
+    struct pokelista *Primeiro;
+}Lista;
+
 typedef struct pokelista{
-    Pokemon pokemons[10];
-    int ultimo;
-    int primeiro;
+    Pokemon pokemon;
+    struct pokelista * pProx;
 } PokeLista;
 
-void InicializaPokeLista(PokeLista *lista);
-void InserePokemon(PokeLista *lista, Pokemon *poke);
-void RemovePokemonFugitivo (PokeLista *lista);
-void RemovePokemonTreinador (PokeLista *listatreinador, PokeLista *listacentro);
-void BuscaPokemon (PokeLista *lista, int id);
-void ImprimePokemons (PokeLista *lista);
-int ListaEVazia (PokeLista *lista);
+int ListaEVazia (Lista *lista);
+void InicializaLista(Lista *lista);
+void InserePokemon(Lista *lista, Pokemon *poke);
+void RemovePokemonFugitivo (Lista *lista);
+void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter);
+void BuscaPokemon (Lista *lista, int id);
+void ImprimePokemons (Lista *lista);
+
 
 #endif

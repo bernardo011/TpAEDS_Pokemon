@@ -8,7 +8,7 @@ typedef struct treinador {
     int id_trainer;
     char nome[50];
     int coordenada_treinador[2];
-    PokeLista ListaCapturados;
+    Lista ListaCapturados;
     int QtdPokebolas;
 } Treinador;
 

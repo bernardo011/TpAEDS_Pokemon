@@ -1,43 +1,81 @@
 #include "PokeLista.h"
 #include <stdio.h>
+#include <stdlib.h>
+
 typedef struct pokemon Pokemon;
 
-int ListaEVazia (PokeLista *lista){
-    if ((*lista).ultimo == (*lista).primeiro){
-        return 1;
-    } else {
+int ListaEVazia (Lista *lista){
+    if (lista -> Primeiro){
         return 0;
+    } else {
+        return 1;
     }
 }
 
-void InicializaPokeLista (PokeLista *lista){
-    (*lista).primeiro = 0;
-    (*lista).ultimo = 0;
-}
-void InserePokemon (PokeLista *lista, Pokemon *poke){
-    (*lista).pokemons[(*lista).ultimo] = (*poke);
-    (*lista).ultimo++;
+void InicializaLista (Lista *lista){
+    lista -> Primeiro = NULL;
 }
 
-void RemovePokemonFugitivo (PokeLista *listacentro){
-    (*listacentro).primeiro++;
+void InserePokemon (Lista *lista, Pokemon *poke){
+    // Eu crio um ponteiro para um endereço no heap que aloca memória para minha struct
+    //PokeLista, depois acesso esse ponteiro e guardo um pokemon, acesso o campo de apon-
+    //tador da minha nova célula e faço ele ser igual ao antigo primeiro que estava sendo
+    //apontado pela minha célula cabeça e faço a célula cabeça apontar para a nova célula
+    PokeLista *nova_celula = (PokeLista*) malloc (sizeof(PokeLista));
+    (*nova_celula).pokemon = (*poke);
+    (*nova_celula).pProx = lista -> Primeiro;
+    lista -> Primeiro = nova_celula;
 }
-void RemovePokemonTreinador (PokeLista *listatreinador, PokeLista *listacentro){
-    for (int i = (*listatreinador).primeiro; i<(*listatreinador).ultimo; i++){
-        (*listacentro).pokemons[(*listacentro).ultimo] = (*listatreinador).pokemons[i];
-        (*listacentro).ultimo++;
-    }
-    (*listatreinador).ultimo = (*listatreinador).primeiro;
+
+void RemovePokemonFugitivo (Lista *lista){
+    // Ver se não precisa liberar essa memória;
+    lista -> Primeiro = lista -> Primeiro -> pProx;
 }
-void BuscaPokemon (PokeLista *lista, int id){
-    for (int i = (*lista).primeiro; i<(*lista).ultimo; i++){
-        if (((*lista).pokemons[i].id_pokemon) == id){
-            printf("Id Pokemon: %d\n", (*lista).pokemons[i].id_pokemon);
+
+void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter){
+    if (ListaEVazia(lista_trainer)){
+        printf("A lista é vazia!\n");
+    } else {
+        while (lista_trainer -> Primeiro){
+            InserePokemon (lista_pokecenter, &((*lista_trainer).Primeiro -> pokemon));
+            (*lista_trainer).Primeiro = (*lista_trainer).Primeiro -> pProx;
         }
     }
 }
-void ImprimePokemons (PokeLista *lista){
-    for (int i = (*lista).primeiro; i<(*lista).ultimo; i++){
-        printf("Id: %d\n", (*lista).pokemons[i].id_pokemon);
+void BuscaPokemon (Lista *lista, int id){
+    int True = 1;
+    PokeLista *atual = lista -> Primeiro;
+    while (True){
+        if ((*atual).pokemon.id_pokemon == id){
+            printf("Id do Pokémon: %d\n", (*lista).Primeiro -> pokemon.id_pokemon);
+            printf("Número da Pokédex: %d\n", (*lista).Primeiro -> pokemon.pokedex);
+            printf("Nome do Pokémon: %s\n", (*lista).Primeiro -> pokemon.nome);
+            printf("Tipo do Pokémon: %s\n", (*lista).Primeiro -> pokemon.tipo);
+            printf("Coordenadas do Pokémon: (%d,%d)\n", (*lista).Primeiro -> pokemon.coordenadas[0], (*lista).Primeiro -> pokemon.coordenadas[1]);
+            True = 0;
+            break;
+        } else {
+            atual = (*atual).pProx;
+            if (atual == NULL){
+                printf("Pokémon não encontrado.\n");
+                True = 0;
+                break;
+            }
+        }
     }
+}
+void ImprimePokemons (Lista *lista){
+    if (ListaEVazia(lista)){
+        printf("A lista está vazia!\n");
+    } else {
+        PokeLista *aux = lista -> Primeiro;
+        while (aux){
+            printf("Id do Pokémon: %d\n", aux -> pokemon.id_pokemon);
+            printf("Número da Pokédex: %d\n", aux -> pokemon.pokedex);
+            printf("Nome do Pokémon: %s\n", aux -> pokemon.nome);
+            printf("Tipo do Pokémon: %s\n", aux -> pokemon.tipo);
+            printf("Coordenadas do Pokémon: (%d,%d)\n", aux -> pokemon.coordenadas[0], aux -> pokemon.coordenadas[1]);
+            aux = (*aux).pProx;
+        }
+    }    
 }

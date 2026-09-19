@@ -29,7 +29,9 @@ void InserePokemon (Lista *lista, Pokemon *poke){
 
 void RemovePokemonFugitivo (Lista *lista){
     // Ver se não precisa liberar essa memória;
+    Lista *aux = lista -> Primeiro;
     lista -> Primeiro = lista -> Primeiro -> pProx;
+    free(aux);
 }
 
 void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter){

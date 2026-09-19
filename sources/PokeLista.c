@@ -27,11 +27,13 @@ void InserePokemon (Lista *lista, Pokemon *poke){
     lista -> Primeiro = nova_celula;
 }
 
-void RemovePokemonFugitivo (Lista *lista){
-    // Ver se não precisa liberar essa memória;
-    Lista *aux = lista -> Primeiro;
-    lista -> Primeiro = lista -> Primeiro -> pProx;
-    free(aux);
+int RemovePokemonFugitivo (Lista *lista){
+        if (ListaEVazia(lista)){
+            return 0;
+        }
+        PokeLista *aux = lista -> Primeiro;
+        (*lista).Primeiro = (*lista).Primeiro -> pProx;
+        free(aux);
 }
 
 void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter){
@@ -40,7 +42,9 @@ void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter){
     } else {
         while (lista_trainer -> Primeiro){
             InserePokemon (lista_pokecenter, &((*lista_trainer).Primeiro -> pokemon));
+            PokeLista *aux = (*lista_trainer).Primeiro;
             (*lista_trainer).Primeiro = (*lista_trainer).Primeiro -> pProx;
+            free(aux);
         }
     }
 }

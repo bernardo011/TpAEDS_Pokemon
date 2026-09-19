@@ -15,7 +15,6 @@ typedef struct treinador {
 void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2);
 void MovimentaTreinador(Treinador *trainer, int position[]);
 void CapturaPokemon(Treinador *trainer, Pokemon *poke);
-void RetiraListaTreinador(Treinador *trainer, PokeLista *listacentro);
 void ImprimeTreinador(Treinador *trainer);
 int getIdTreinador(Treinador *trainer);
 void getCoordenadaTreinador (Treinador *trainer, int coordenada_treinador[]);

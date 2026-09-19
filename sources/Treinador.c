@@ -42,10 +42,6 @@ void CapturaPokemon (Treinador *trainer, Pokemon *poke){
     InserePokemon (&(*trainer).ListaCapturados, poke);
 }
 
-void RetiraListaTreinador (Treinador *trainer, PokeLista *listacentro){
-
-}
-
 void ImprimeTreinador (Treinador *trainer){
     printf("Id do Treinador: %d\n", (*trainer).id_trainer);
     printf("Nome do treinador: %s\n", (*trainer).nome);

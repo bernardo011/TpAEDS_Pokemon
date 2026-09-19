@@ -177,6 +177,30 @@ sources/PokeLista.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/PokeLista.c.s
 .PHONY : sources/PokeLista.c.s
 
+sources/Pokemon.o: sources/Pokemon.c.o
+.PHONY : sources/Pokemon.o
+
+# target to build an object file
+sources/Pokemon.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/Pokemon.c.o
+.PHONY : sources/Pokemon.c.o
+
+sources/Pokemon.i: sources/Pokemon.c.i
+.PHONY : sources/Pokemon.i
+
+# target to preprocess a source file
+sources/Pokemon.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/Pokemon.c.i
+.PHONY : sources/Pokemon.c.i
+
+sources/Pokemon.s: sources/Pokemon.c.s
+.PHONY : sources/Pokemon.s
+
+# target to generate assembly for a file
+sources/Pokemon.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/Pokemon.c.s
+.PHONY : sources/Pokemon.c.s
+
 sources/Treinador.o: sources/Treinador.c.o
 .PHONY : sources/Treinador.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... sources/PokeLista.o"
 	@echo "... sources/PokeLista.i"
 	@echo "... sources/PokeLista.s"
+	@echo "... sources/Pokemon.o"
+	@echo "... sources/Pokemon.i"
+	@echo "... sources/Pokemon.s"
 	@echo "... sources/Treinador.o"
 	@echo "... sources/Treinador.i"
 	@echo "... sources/Treinador.s"

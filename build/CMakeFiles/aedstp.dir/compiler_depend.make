@@ -35,6 +35,63 @@ CMakeFiles/aedstp.dir/main.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/main.c \
 CMakeFiles/aedstp.dir/sources/PokeLista.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/sources/PokeLista.c \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
+
+CMakeFiles/aedstp.dir/sources/Pokemon.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/sources/Pokemon.c \
+  /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/libc-header-start.h \
@@ -47,8 +104,10 @@ CMakeFiles/aedstp.dir/sources/PokeLista.c.o: /home/bernardo/Projects/TpAEDS_Pok-
   /usr/include/bits/types/__FILE.h \
   /usr/include/bits/types/__fpos64_t.h \
   /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/wordsize.h \
@@ -58,6 +117,8 @@ CMakeFiles/aedstp.dir/sources/PokeLista.c.o: /home/bernardo/Projects/TpAEDS_Pok-
   /usr/include/gnu/stubs.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
@@ -114,113 +175,174 @@ aedstp: /usr/lib/Scrt1.o \
   /usr/lib/libc_nonshared.a \
   CMakeFiles/aedstp.dir/main.c.o \
   CMakeFiles/aedstp.dir/sources/PokeLista.c.o \
+  CMakeFiles/aedstp.dir/sources/Pokemon.c.o \
   CMakeFiles/aedstp.dir/sources/Treinador.c.o
 
 
-CMakeFiles/aedstp.dir/sources/Treinador.c.o:
+CMakeFiles/aedstp.dir/sources/Pokemon.c.o:
 
 CMakeFiles/aedstp.dir/sources/PokeLista.c.o:
+
+CMakeFiles/aedstp.dir/main.c.o:
 
 /usr/lib/libc.so.6:
 
 /usr/lib/ld-linux-x86-64.so.2:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so:
+CMakeFiles/aedstp.dir/sources/Treinador.c.o:
 
-/usr/lib/libc_nonshared.a:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.so:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
 /usr/lib/libgcc_s.so.1:
 
-/usr/lib/crtn.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so:
-
-/usr/lib/crti.o:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/lib/Scrt1.o:
-
-/home/bernardo/Projects/TpAEDS_Pok-mon/sources/Treinador.c:
-
-/usr/include/bits/types/__locale_t.h:
-
-/home/bernardo/Projects/TpAEDS_Pok-mon/sources/PokeLista.c:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/bits/floatn.h:
-
-/home/bernardo/Projects/TpAEDS_Pok-mon/headers/Treinador.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/bits/time64.h:
-
-/home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h:
-
-/home/bernardo/Projects/TpAEDS_Pok-mon/main.c:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/strings.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
-
 /usr/lib/libc.so:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic_asneeded.so:
 
-/usr/include/bits/types/struct_FILE.h:
+/usr/lib/crtn.o:
 
-CMakeFiles/aedstp.dir/main.c.o:
+/usr/lib/crti.o:
 
-/usr/include/features.h:
+/home/bernardo/Projects/TpAEDS_Pok-mon/sources/Treinador.c:
 
-/usr/include/gnu/stubs.h:
+/usr/include/strings.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/sys/cdefs.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h:
 
-/usr/include/stdio.h:
+/usr/include/gnu/stubs.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/types/FILE.h:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/sources/Pokemon.c:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/lib/Scrt1.o:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/main.c:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/headers/Treinador.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/lib/libc_nonshared.a:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/sources/PokeLista.c:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/bits/timesize.h:
 
+/usr/include/bits/endian.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/endianness.h:
+
 /usr/include/stdc-predef.h:
 
-/usr/include/sys/cdefs.h:
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:

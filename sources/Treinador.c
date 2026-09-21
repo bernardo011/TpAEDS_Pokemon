@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "Treinador.h"
 
 void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2){
@@ -30,6 +31,7 @@ void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2){
             index++;
     }
 }
+    fclose(p);
 }
 
  void MovimentaTreinador (Treinador *trainer , int position[]){
@@ -52,6 +54,19 @@ void ImprimeTreinador (Treinador *trainer){
         printf("O treinador não possui pokemons no momento\n");
     } else {
         ImprimePokemons(&((*trainer).ListaCapturados));
+    }
+}
+
+void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter){
+    if (ListaEVazia(lista_trainer)){
+        printf("A lista é vazia!\n");
+    } else {
+        while (lista_trainer -> Primeiro){
+            InserePokemon (lista_pokecenter, &((*lista_trainer).Primeiro -> pokemon));
+            PokeLista *aux = (*lista_trainer).Primeiro;
+            (*lista_trainer).Primeiro = (*lista_trainer).Primeiro -> pProx;
+            free(aux);
+        }
     }
 }
 

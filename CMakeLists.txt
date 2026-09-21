@@ -8,8 +8,11 @@ include_directories(headers)
 
 set(SOURCES
     main.c
+    sources/function_call.c
     sources/PokeLista.c
     sources/Treinador.c
     sources/Pokemon.c
+    sources/CentroPesquisa.c
 )
 add_executable(aedstp ${SOURCES})
+target_link_libraries(aedstp m)

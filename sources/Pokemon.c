@@ -1,12 +1,26 @@
-#include "Pokemon.h"
 #include <stdio.h>
 #include <string.h>
+#include "Pokemon.h"
 
-void InicializaPokemon(Pokemon *poke, int id, int pokedex, char nome[], char tipo[], int coordenadas_pokemon[]){
-    (*poke).id_pokemon = id;
-    (*poke).pokedex = pokedex;
-    (*poke).coordenadas[0] = coordenadas_pokemon[0];
-    (*poke).coordenadas[1] = coordenadas_pokemon[1];
-    strcpy((*poke).tipo, tipo);
-    strcpy((*poke).nome, nome);
-}
+void InicializaPokemon (Pokemon *poke, int id,int pokedex, char nome[], char tipo[], int x, int y){
+    poke->id_pokemon=id;
+    poke->pokedex=pokedex;
+    strcpy(poke->nome, nome);
+    strcpy(poke->tipo, tipo);
+    poke->coordenadas[0]=x;
+    poke->coordenadas[1]=y;
+};
+
+void ImprimePokemon (Pokemon *poke){
+    printf("Pokémon Alvo: %s\n",poke->nome);
+    printf("Localização: (%d,%d)", poke->coordenadas[0], poke->coordenadas[1]);
+};
+
+void getNomePoke (Pokemon *poke, char nomePoke[]){
+    strcpy(nomePoke, poke->nome);
+};
+
+void getCoordenadaPoke (Pokemon *poke, int coordenada_pokemon[]){
+    coordenada_pokemon[0]=poke->coordenadas[0];
+    coordenada_pokemon[1]=poke->coordenadas[1];
+};

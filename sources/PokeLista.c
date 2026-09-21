@@ -27,27 +27,6 @@ void InserePokemon (Lista *lista, Pokemon *poke){
     lista -> Primeiro = nova_celula;
 }
 
-int RemovePokemonFugitivo (Lista *lista){
-        if (ListaEVazia(lista)){
-            return 0;
-        }
-        PokeLista *aux = lista -> Primeiro;
-        (*lista).Primeiro = (*lista).Primeiro -> pProx;
-        free(aux);
-}
-
-void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter){
-    if (ListaEVazia(lista_trainer)){
-        printf("A lista é vazia!\n");
-    } else {
-        while (lista_trainer -> Primeiro){
-            InserePokemon (lista_pokecenter, &((*lista_trainer).Primeiro -> pokemon));
-            PokeLista *aux = (*lista_trainer).Primeiro;
-            (*lista_trainer).Primeiro = (*lista_trainer).Primeiro -> pProx;
-            free(aux);
-        }
-    }
-}
 void BuscaPokemon (Lista *lista, int id){
     int True = 1;
     PokeLista *atual = lista -> Primeiro;
@@ -84,4 +63,13 @@ void ImprimePokemons (Lista *lista){
             aux = (*aux).pProx;
         }
     }    
+}
+
+int RemovePokemon (Lista *lista){
+        if (ListaEVazia(lista)){
+            return 0;
+        }
+        PokeLista *aux = lista -> Primeiro;
+        (*lista).Primeiro = (*lista).Primeiro -> pProx;
+        free(aux);
 }

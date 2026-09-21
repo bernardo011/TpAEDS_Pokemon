@@ -14,8 +14,7 @@ typedef struct pokelista{
 int ListaEVazia (Lista *lista);
 void InicializaLista(Lista *lista);
 void InserePokemon(Lista *lista, Pokemon *poke);
-int RemovePokemonFugitivo (Lista *lista);
-void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter);
+int RemovePokemon (Lista *lista);
 void BuscaPokemon (Lista *lista, int id);
 void ImprimePokemons (Lista *lista);
 

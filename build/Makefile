@@ -153,6 +153,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/main.c.s
 .PHONY : main.c.s
 
+sources/CentroPesquisa.o: sources/CentroPesquisa.c.o
+.PHONY : sources/CentroPesquisa.o
+
+# target to build an object file
+sources/CentroPesquisa.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o
+.PHONY : sources/CentroPesquisa.c.o
+
+sources/CentroPesquisa.i: sources/CentroPesquisa.c.i
+.PHONY : sources/CentroPesquisa.i
+
+# target to preprocess a source file
+sources/CentroPesquisa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.i
+.PHONY : sources/CentroPesquisa.c.i
+
+sources/CentroPesquisa.s: sources/CentroPesquisa.c.s
+.PHONY : sources/CentroPesquisa.s
+
+# target to generate assembly for a file
+sources/CentroPesquisa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.s
+.PHONY : sources/CentroPesquisa.c.s
+
 sources/PokeLista.o: sources/PokeLista.c.o
 .PHONY : sources/PokeLista.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sources/CentroPesquisa.o"
+	@echo "... sources/CentroPesquisa.i"
+	@echo "... sources/CentroPesquisa.s"
 	@echo "... sources/PokeLista.o"
 	@echo "... sources/PokeLista.i"
 	@echo "... sources/PokeLista.s"

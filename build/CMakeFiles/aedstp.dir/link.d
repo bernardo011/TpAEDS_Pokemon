@@ -6,6 +6,7 @@ aedstp: \
   CMakeFiles/aedstp.dir/sources/PokeLista.c.o \
   CMakeFiles/aedstp.dir/sources/Treinador.c.o \
   CMakeFiles/aedstp.dir/sources/Pokemon.c.o \
+  CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so \
@@ -51,6 +52,8 @@ CMakeFiles/aedstp.dir/sources/PokeLista.c.o:
 CMakeFiles/aedstp.dir/sources/Treinador.c.o:
 
 CMakeFiles/aedstp.dir/sources/Pokemon.c.o:
+
+CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
 

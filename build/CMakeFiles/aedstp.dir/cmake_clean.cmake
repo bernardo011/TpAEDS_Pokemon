@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/aedstp.dir/link.d"
   "CMakeFiles/aedstp.dir/main.c.o"
   "CMakeFiles/aedstp.dir/main.c.o.d"
+  "CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o"
+  "CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o.d"
   "CMakeFiles/aedstp.dir/sources/PokeLista.c.o"
   "CMakeFiles/aedstp.dir/sources/PokeLista.c.o.d"
   "CMakeFiles/aedstp.dir/sources/Pokemon.c.o"

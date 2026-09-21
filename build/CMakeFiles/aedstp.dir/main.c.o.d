@@ -19,4 +19,5 @@ CMakeFiles/aedstp.dir/main.c.o: \
  /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
  /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
  /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Treinador.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h
+ /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
+ /home/bernardo/Projects/TpAEDS_Pok-mon/headers/CentroPesquisa.h

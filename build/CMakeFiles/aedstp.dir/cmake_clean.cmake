@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/aedstp.dir/sources/Pokemon.c.o.d"
   "CMakeFiles/aedstp.dir/sources/Treinador.c.o"
   "CMakeFiles/aedstp.dir/sources/Treinador.c.o.d"
+  "CMakeFiles/aedstp.dir/sources/function_call.c.o"
+  "CMakeFiles/aedstp.dir/sources/function_call.c.o.d"
   "aedstp"
   "aedstp.pdb"
 )

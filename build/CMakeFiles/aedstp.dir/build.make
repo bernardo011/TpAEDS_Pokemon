@@ -86,10 +86,24 @@ CMakeFiles/aedstp.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/aedstp.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bernardo/Projects/TpAEDS_Pok-mon/main.c -o CMakeFiles/aedstp.dir/main.c.s
 
+CMakeFiles/aedstp.dir/sources/function_call.c.o: CMakeFiles/aedstp.dir/flags.make
+CMakeFiles/aedstp.dir/sources/function_call.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/sources/function_call.c
+CMakeFiles/aedstp.dir/sources/function_call.c.o: CMakeFiles/aedstp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/aedstp.dir/sources/function_call.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/aedstp.dir/sources/function_call.c.o -MF CMakeFiles/aedstp.dir/sources/function_call.c.o.d -o CMakeFiles/aedstp.dir/sources/function_call.c.o -c /home/bernardo/Projects/TpAEDS_Pok-mon/sources/function_call.c
+
+CMakeFiles/aedstp.dir/sources/function_call.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/aedstp.dir/sources/function_call.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bernardo/Projects/TpAEDS_Pok-mon/sources/function_call.c > CMakeFiles/aedstp.dir/sources/function_call.c.i
+
+CMakeFiles/aedstp.dir/sources/function_call.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/aedstp.dir/sources/function_call.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bernardo/Projects/TpAEDS_Pok-mon/sources/function_call.c -o CMakeFiles/aedstp.dir/sources/function_call.c.s
+
 CMakeFiles/aedstp.dir/sources/PokeLista.c.o: CMakeFiles/aedstp.dir/flags.make
 CMakeFiles/aedstp.dir/sources/PokeLista.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/sources/PokeLista.c
 CMakeFiles/aedstp.dir/sources/PokeLista.c.o: CMakeFiles/aedstp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/aedstp.dir/sources/PokeLista.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/aedstp.dir/sources/PokeLista.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/aedstp.dir/sources/PokeLista.c.o -MF CMakeFiles/aedstp.dir/sources/PokeLista.c.o.d -o CMakeFiles/aedstp.dir/sources/PokeLista.c.o -c /home/bernardo/Projects/TpAEDS_Pok-mon/sources/PokeLista.c
 
 CMakeFiles/aedstp.dir/sources/PokeLista.c.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/aedstp.dir/sources/PokeLista.c.s: cmake_force
 CMakeFiles/aedstp.dir/sources/Treinador.c.o: CMakeFiles/aedstp.dir/flags.make
 CMakeFiles/aedstp.dir/sources/Treinador.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/sources/Treinador.c
 CMakeFiles/aedstp.dir/sources/Treinador.c.o: CMakeFiles/aedstp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/aedstp.dir/sources/Treinador.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/aedstp.dir/sources/Treinador.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/aedstp.dir/sources/Treinador.c.o -MF CMakeFiles/aedstp.dir/sources/Treinador.c.o.d -o CMakeFiles/aedstp.dir/sources/Treinador.c.o -c /home/bernardo/Projects/TpAEDS_Pok-mon/sources/Treinador.c
 
 CMakeFiles/aedstp.dir/sources/Treinador.c.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/aedstp.dir/sources/Treinador.c.s: cmake_force
 CMakeFiles/aedstp.dir/sources/Pokemon.c.o: CMakeFiles/aedstp.dir/flags.make
 CMakeFiles/aedstp.dir/sources/Pokemon.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/sources/Pokemon.c
 CMakeFiles/aedstp.dir/sources/Pokemon.c.o: CMakeFiles/aedstp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/aedstp.dir/sources/Pokemon.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/aedstp.dir/sources/Pokemon.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/aedstp.dir/sources/Pokemon.c.o -MF CMakeFiles/aedstp.dir/sources/Pokemon.c.o.d -o CMakeFiles/aedstp.dir/sources/Pokemon.c.o -c /home/bernardo/Projects/TpAEDS_Pok-mon/sources/Pokemon.c
 
 CMakeFiles/aedstp.dir/sources/Pokemon.c.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/aedstp.dir/sources/Pokemon.c.s: cmake_force
 CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o: CMakeFiles/aedstp.dir/flags.make
 CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/sources/CentroPesquisa.c
 CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o: CMakeFiles/aedstp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o -MF CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o.d -o CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o -c /home/bernardo/Projects/TpAEDS_Pok-mon/sources/CentroPesquisa.c
 
 CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.i: cmake_force
@@ -145,6 +159,7 @@ CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.s: cmake_force
 # Object files for target aedstp
 aedstp_OBJECTS = \
 "CMakeFiles/aedstp.dir/main.c.o" \
+"CMakeFiles/aedstp.dir/sources/function_call.c.o" \
 "CMakeFiles/aedstp.dir/sources/PokeLista.c.o" \
 "CMakeFiles/aedstp.dir/sources/Treinador.c.o" \
 "CMakeFiles/aedstp.dir/sources/Pokemon.c.o" \
@@ -154,6 +169,7 @@ aedstp_OBJECTS = \
 aedstp_EXTERNAL_OBJECTS =
 
 aedstp: CMakeFiles/aedstp.dir/main.c.o
+aedstp: CMakeFiles/aedstp.dir/sources/function_call.c.o
 aedstp: CMakeFiles/aedstp.dir/sources/PokeLista.c.o
 aedstp: CMakeFiles/aedstp.dir/sources/Treinador.c.o
 aedstp: CMakeFiles/aedstp.dir/sources/Pokemon.c.o
@@ -161,7 +177,7 @@ aedstp: CMakeFiles/aedstp.dir/sources/CentroPesquisa.c.o
 aedstp: CMakeFiles/aedstp.dir/build.make
 aedstp: CMakeFiles/aedstp.dir/compiler_depend.ts
 aedstp: CMakeFiles/aedstp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable aedstp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bernardo/Projects/TpAEDS_Pok-mon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable aedstp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aedstp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

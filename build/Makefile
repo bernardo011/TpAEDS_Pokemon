@@ -249,6 +249,30 @@ sources/Treinador.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/Treinador.c.s
 .PHONY : sources/Treinador.c.s
 
+sources/function_call.o: sources/function_call.c.o
+.PHONY : sources/function_call.o
+
+# target to build an object file
+sources/function_call.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/function_call.c.o
+.PHONY : sources/function_call.c.o
+
+sources/function_call.i: sources/function_call.c.i
+.PHONY : sources/function_call.i
+
+# target to preprocess a source file
+sources/function_call.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/function_call.c.i
+.PHONY : sources/function_call.c.i
+
+sources/function_call.s: sources/function_call.c.s
+.PHONY : sources/function_call.s
+
+# target to generate assembly for a file
+sources/function_call.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aedstp.dir/build.make CMakeFiles/aedstp.dir/sources/function_call.c.s
+.PHONY : sources/function_call.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -273,6 +297,9 @@ help:
 	@echo "... sources/Treinador.o"
 	@echo "... sources/Treinador.i"
 	@echo "... sources/Treinador.s"
+	@echo "... sources/function_call.o"
+	@echo "... sources/function_call.i"
+	@echo "... sources/function_call.s"
 .PHONY : help
 
 

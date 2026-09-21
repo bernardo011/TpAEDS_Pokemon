@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bernardo/Projects/TpAEDS_Pok-mon/sources/PokeLista.c" "CMakeFiles/aedstp.dir/sources/PokeLista.c.o" "gcc" "CMakeFiles/aedstp.dir/sources/PokeLista.c.o.d"
   "/home/bernardo/Projects/TpAEDS_Pok-mon/sources/Pokemon.c" "CMakeFiles/aedstp.dir/sources/Pokemon.c.o" "gcc" "CMakeFiles/aedstp.dir/sources/Pokemon.c.o.d"
   "/home/bernardo/Projects/TpAEDS_Pok-mon/sources/Treinador.c" "CMakeFiles/aedstp.dir/sources/Treinador.c.o" "gcc" "CMakeFiles/aedstp.dir/sources/Treinador.c.o.d"
+  "/home/bernardo/Projects/TpAEDS_Pok-mon/sources/function_call.c" "CMakeFiles/aedstp.dir/sources/function_call.c.o" "gcc" "CMakeFiles/aedstp.dir/sources/function_call.c.o.d"
   "" "aedstp" "gcc" "CMakeFiles/aedstp.dir/link.d"
   )
 

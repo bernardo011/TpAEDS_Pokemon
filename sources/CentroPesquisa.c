@@ -9,7 +9,7 @@ void InicializaCentroPesquisa (CentroPesquisa *cp){
 };
 
 void InsereFugitivos (CentroPesquisa *cp){
-    FILE *arq = fopen("teste2.txt", "r");
+    FILE *arq = fopen("teste1.txt", "r");
     if (arq==NULL){
         printf("Arquivo nulo");
     }else{

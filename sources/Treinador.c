@@ -5,7 +5,7 @@
 
 void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2){
     FILE *p;
-    p = fopen("teste2.txt", "r");
+    p = fopen("teste1.txt", "r");
     if (p == NULL){
         printf("Ponteiro vazio\n");
     } else {

@@ -1,5 +1,7 @@
 #ifndef POKEMON_H
 #define POKEMON_H
+
+// TAD Pokémon que armazena as informações de um pokémon.
 typedef struct pokemon{
     int id_pokemon;
     int pokedex;

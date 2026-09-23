@@ -1,5 +1,6 @@
 #ifndef FUNCTION_CALL_H
 #define FUNCTION_CALL_H
+// Declaração prévia das structs que precisarão de um ponteiro nas funções abaixo.
 typedef struct centropesquisa CentroPesquisa;
 typedef struct treinador Treinador;
 typedef struct pokemon Pokemon;

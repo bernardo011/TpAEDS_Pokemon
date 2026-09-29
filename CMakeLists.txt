@@ -14,5 +14,5 @@ set(SOURCES
     sources/Pokemon.c
     sources/CentroPesquisa.c
 )
-add_executable(aedstp ${SOURCES})
-target_link_libraries(aedstp m)
+add_executable(programa ${SOURCES})
+target_link_libraries(programa m)

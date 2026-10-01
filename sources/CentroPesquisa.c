@@ -27,7 +27,7 @@ void InsereFugitivos (CentroPesquisa *cp){
         int y;
         Pokemon Greninja;
         for (int i = 0; i<2; i++){
-            (fscanf (arq, "%49s %d", nome, &pokeball) == 2);
+            fscanf (arq, "%49s %d", nome, &pokeball);
         } 
         fscanf (arq, "%d", &total);
         while (fscanf (arq, "%d %s %s %d %d", &dex, nome, tipo, &x, &y) == 5){

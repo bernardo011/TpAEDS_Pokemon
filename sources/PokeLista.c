@@ -4,6 +4,7 @@
 
 typedef struct pokemon Pokemon;
 
+// Retorna 1 se o primeiro é igual a nulo.
 int ListaEVazia (Lista *lista){
     if (lista -> Primeiro){
         return 0;
@@ -17,10 +18,7 @@ void InicializaLista (Lista *lista){
 }
 
 void InserePokemon (Lista *lista, Pokemon *poke){
-    // Eu crio um ponteiro para um endereço no heap que aloca memória para minha struct
-    //PokeLista, depois acesso esse ponteiro e guardo um pokemon, acesso o campo de apon-
-    //tador da minha nova célula e faço ele ser igual ao antigo primeiro que estava sendo
-    //apontado pela minha célula cabeça e faço a célula cabeça apontar para a nova célula
+    // Aloca memória para um novo nó e faz ele ser o novo primeiro ao atribuir ao campo pProx o antigo primeiro.
     PokeLista *nova_celula = (PokeLista*) malloc (sizeof(PokeLista));
     (*nova_celula).pokemon = (*poke);
     (*nova_celula).pProx = lista -> Primeiro;
@@ -30,6 +28,7 @@ void InserePokemon (Lista *lista, Pokemon *poke){
 void BuscaPokemon (Lista *lista, int id){
     int True = 1;
     PokeLista *atual = lista -> Primeiro;
+    // Percorre a lista até achar um pokémon que tem o mesmo id que o recebido ou o ponteiro ser nulo.
     while (True){
         if ((*atual).pokemon.id_pokemon == id){
             printf("Id do Pokémon: %d\n", (*lista).Primeiro -> pokemon.id_pokemon);
@@ -50,6 +49,7 @@ void BuscaPokemon (Lista *lista, int id){
     }
 }
 void ImprimePokemons (Lista *lista){
+    // Percorre a lista imprimindo cada campo até o ponteiro ser nulo.
     if (ListaEVazia(lista)){
         printf("A lista está vazia!\n");
     } else {
@@ -66,6 +66,7 @@ void ImprimePokemons (Lista *lista){
 }
 
 int RemovePokemon (Lista *lista){
+        // Faz o primeiro da lista ser igual ao segundo e libera a memória do antigo primeiro.
         if (ListaEVazia(lista)){
             return 0;
         }

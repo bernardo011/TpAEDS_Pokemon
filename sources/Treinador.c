@@ -12,6 +12,7 @@ void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2){
         int index = 0;
         char nomeTreinador[50];
         int pokebolas;
+        // Percorre o arquivo de teste enquanto o fscanf retornar 2.
         while (fscanf(p, "%49s %d", nomeTreinador, &pokebolas) == 2){
             if (index == 0){
                 trainer1 -> QtdPokebolas = pokebolas;
@@ -30,8 +31,8 @@ void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2){
             }
             index++;
     }
-}
     fclose(p);
+}
 }
 
  void MovimentaTreinador (Treinador *trainer , int position[]){
@@ -61,6 +62,9 @@ void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter){
     if (ListaEVazia(lista_trainer)){
         printf("A lista é vazia!\n");
     } else {
+        /* Insere o primeiro pokémon da lista do treinador na lista de recuperados do PokeCenter e o remove da lista
+            do treinador sucessivamente até a lista dele ficar vazia.
+        */
         while (lista_trainer -> Primeiro){
             InserePokemon (lista_pokecenter, &((*lista_trainer).Primeiro -> pokemon));
             PokeLista *aux = (*lista_trainer).Primeiro;

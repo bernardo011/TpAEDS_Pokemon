@@ -3,6 +3,7 @@
 #include "Pokemon.h"
 
 void InicializaPokemon (Pokemon *poke, int id,int pokedex, char nome[], char tipo[], int x, int y){
+    // Preenche os campos da struct com os valores recebidos pela função
     poke->id_pokemon=id;
     poke->pokedex=pokedex;
     strcpy(poke->nome, nome);

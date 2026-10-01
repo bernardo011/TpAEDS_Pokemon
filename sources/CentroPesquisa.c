@@ -9,8 +9,8 @@ void InicializaCentroPesquisa (CentroPesquisa *cp){
     InicializaLista(&cp->PokemonsRecuperados);
 };
 
-/* A inserção dos pokémons fugitivos é feita através de um loop while que ignora as duas primeiras linhas não nulas
-do arquivo de teste e depois lê um inteiro referente a quantidade de pokémons fugitivos 
+/* A função InsereFugitivos "pula" as duas primeiras linhas não nulas do arquivo usando um loop for e um fscanf
+que guarda uma string e um inteiro duas vezes. Isso é feito para ignorar as linhas dos treinadores.
 */
 void InsereFugitivos (CentroPesquisa *cp){
     FILE *arq = fopen("teste1.txt", "r");
@@ -26,19 +26,26 @@ void InsereFugitivos (CentroPesquisa *cp){
         int x;
         int y;
         Pokemon Greninja;
+
         for (int i = 0; i<2; i++){
             (fscanf (arq, "%49s %d", nome, &pokeball) == 2);
-        } 
+        }
+        /* Após as duas primeiras linhas não nulas, lê o próximo número inteiro que informa o total de pokémons fugitivos.
+        */
         fscanf (arq, "%d", &total);
+        /* Enquanto a função fscanf retornar 5 valores lidos, o loop while inicializa o Pokémon lido e insere na lista de
+        fugitivos.
+        */
         while (fscanf (arq, "%d %s %s %d %d", &dex, nome, tipo, &x, &y) == 5){
             InicializaPokemon(&Greninja, id, dex, nome, tipo, x, y);
             InserePokemon(&cp->PokemonsFugitivos, &Greninja);
             id++;
         }
+        fclose(arq);
     };
-    fclose(arq);
-};
 
+};
+// A remoção consiste em fazer o ponteiro para primeiro receber o próximo e liberar o memória do antigo primeiro.
 int RemovePokemonFugitivo (Lista *lista){
         if (ListaEVazia(lista)){
             return 0;
@@ -47,7 +54,7 @@ int RemovePokemonFugitivo (Lista *lista){
         (*lista).Primeiro = (*lista).Primeiro -> pProx;
         free(aux);
 }
-
+// A recarga de pokébolas é feita atribuindo um valor aleatório entre 1 e 20 ao ponteiro x.
 void RecargaPokebolas (int *x){
     *x = (rand()%20)+1;
 };

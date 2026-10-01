@@ -33,7 +33,7 @@ void InsereFugitivos (CentroPesquisa *cp){
         /* Após as duas primeiras linhas não nulas, lê o próximo número inteiro que informa o total de pokémons fugitivos.
         */
         fscanf (arq, "%d", &total);
-        cp -> total = total
+        cp -> total = total;
         /* Enquanto a função fscanf retornar 5 valores lidos, o loop while inicializa o Pokémon lido e insere na lista de
         fugitivos.
         */

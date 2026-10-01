@@ -1,4 +1,4 @@
-#include "PokeLista.h"
+#include "../headers/PokeLista.h"
 #include <stdio.h>
 #include <stdlib.h>
 

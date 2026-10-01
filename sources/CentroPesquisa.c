@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "CentroPesquisa.h"
+#include "../headers/CentroPesquisa.h"
 
 // A inicialização do Centro de Pesquisas consiste em inicializar as duas listas dentro dele usando a função InicializaLista.
 void InicializaCentroPesquisa (CentroPesquisa *cp){

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "Treinador.h"
+#include "../headers/Treinador.h"
 
 void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2){
     FILE *p;

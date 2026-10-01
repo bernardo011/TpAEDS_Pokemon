@@ -1,8 +1,8 @@
-#include "function_call.h"
-#include "CentroPesquisa.h"
-#include "PokeLista.h"
-#include "Pokemon.h"
-#include "Treinador.h"
+#include "../headers/function_call.h"
+#include "../headers/CentroPesquisa.h"
+#include "../headers/PokeLista.h"
+#include "../headers/Pokemon.h"
+#include "../headers/Treinador.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

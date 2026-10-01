@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "Pokemon.h"
+#include "../headers/Pokemon.h"
 
 void InicializaPokemon (Pokemon *poke, int id,int pokedex, char nome[], char tipo[], int x, int y){
     poke->id_pokemon=id;

@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "function_call.h"
-#include "PokeLista.h"
-#include "Pokemon.h"
-#include "Treinador.h"
-#include "CentroPesquisa.h"
+#include "headers/function_call.h"
+#include "headers/PokeLista.h"
+#include "headers/Pokemon.h"
+#include "headers/Treinador.h"
+#include "headers/CentroPesquisa.h"
 #include "stdlib.h"
 
 int main(){

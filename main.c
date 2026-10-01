@@ -4,6 +4,7 @@
 #include "headers/Pokemon.h"
 #include "headers/Treinador.h"
 #include "headers/CentroPesquisa.h"
+#include <windows.h>
 #include "stdlib.h"
 
 int main(){

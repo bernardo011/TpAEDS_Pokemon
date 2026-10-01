@@ -59,7 +59,7 @@ void ImprimeTreinador (Treinador *trainer){
 
 void RemovePokemonTreinador (Lista *lista_trainer, Lista *lista_pokecenter){
     if (ListaEVazia(lista_trainer)){
-        printf("A lista é vazia!\n");
+        return;
     } else {
         while (lista_trainer -> Primeiro){
             InserePokemon (lista_pokecenter, &((*lista_trainer).Primeiro -> pokemon));

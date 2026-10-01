@@ -30,6 +30,7 @@ void InsereFugitivos (CentroPesquisa *cp){
             fscanf (arq, "%49s %d", nome, &pokeball);
         } 
         fscanf (arq, "%d", &total);
+        cp -> total = total;
         while (fscanf (arq, "%d %s %s %d %d", &dex, nome, tipo, &x, &y) == 5){
             InicializaPokemon(&Greninja, id, dex, nome, tipo, x, y);
             InserePokemon(&cp->PokemonsFugitivos, &Greninja);

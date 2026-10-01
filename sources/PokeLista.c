@@ -65,9 +65,9 @@ void ImprimePokemons (Lista *lista){
     }    
 }
 
-int RemovePokemon (Lista *lista){
+void RemovePokemon (Lista *lista){
         if (ListaEVazia(lista)){
-            return 0;
+            return;
         }
         PokeLista *aux = lista -> Primeiro;
         (*lista).Primeiro = (*lista).Primeiro -> pProx;

@@ -4,11 +4,11 @@ CFLAGS = -Wall -Wextra -g
 TARGET = programa
 
 SRCS = main.c \
-       CentroPesquisa.c \
-       function_call.c \
-       PokeLista.c \
-       Pokemon.c \
-       Treinador.c
+       sources/CentroPesquisa.c \
+       sources/function_call.c \
+       sources/PokeLista.c \
+       sources/Pokemon.c \
+       sources/Treinador.c
 
 OBJS = $(SRCS:.c=.o)
 

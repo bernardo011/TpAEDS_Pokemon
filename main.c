@@ -8,6 +8,7 @@
 #include "stdlib.h"
 
 int main(){
+    SetConsoleOutputCP(65001); 
     CentroPesquisa *poke_center;
     Treinador *trainer1, *trainer2;
     Inicializa (&poke_center, &trainer1, &trainer2);

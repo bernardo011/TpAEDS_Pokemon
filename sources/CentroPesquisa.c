@@ -39,9 +39,9 @@ void InsereFugitivos (CentroPesquisa *cp){
     fclose(arq);
 };
 
-int RemovePokemonFugitivo (Lista *lista){
+void RemovePokemonFugitivo (Lista *lista){
         if (ListaEVazia(lista)){
-            return 0;
+            return;
         }
         PokeLista *aux = lista -> Primeiro;
         (*lista).Primeiro = (*lista).Primeiro -> pProx;

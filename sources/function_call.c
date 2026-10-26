@@ -8,49 +8,7 @@
 #include <stdlib.h>
 #include <math.h>
 // Log da missão após a atribuição ter sido feita pela função "AtribuiMission"
-void Mission (Treinador *trainer, Treinador *trainer2, CentroPesquisa *poke_center, double dist1, double dist2){
-    printf("Pokémon alvo: %s \n", (*poke_center).PokemonsFugitivos.Primeiro->pokemon.nome);
-    printf("Localização: (%d, %d) \n\n", (*poke_center).PokemonsFugitivos.Primeiro->pokemon.coordenadas[0], (*poke_center).PokemonsFugitivos.Primeiro->pokemon.coordenadas[1]);
-    printf("Distância Treinador (a) %s: %.2lf \n", (*trainer).nome, dist1);
-    printf("Distância Treinador (a) %s: %.2lf \n\n", (*trainer2).nome, dist2);
-    printf("Missão atribuída ao Treinador (a) %s \n\n", (*trainer).nome);
-    // Movimenta o treinador para a posição do primeiro Pokémon da lista.
-    MovimentaTreinador (trainer, (*poke_center).PokemonsFugitivos.Primeiro->pokemon.coordenadas);
-    printf("Treinador (a) se movimentou para (%d,%d)\n", (*trainer).coordenada_treinador[0], (*trainer).coordenada_treinador[1]);
-    // Insere o Pokémon na lista do treinador e decresce sua quantidade de Pokébolas em um.
-    CapturaPokemon (trainer, &(*poke_center).PokemonsFugitivos.Primeiro->pokemon);
-    printf("%s capturado com sucesso!\n\n", (*poke_center).PokemonsFugitivos.Primeiro->pokemon.nome);
-    // Remove o primeiro Pokémon (topo) da lista de Pokémons fugitivos.
-    RemovePokemonFugitivo (&(*poke_center).PokemonsFugitivos);
-    printf("Pokébolas restantes para o Treinador (a) %s: %d \n\n", (*trainer).nome, (*trainer).QtdPokebolas);
-    if ((*trainer).QtdPokebolas == 0){
-        printf("========================================\n");
-        printf("    Treinador (a) %s SEM POKÉBOLAS      \n", (*trainer).nome);
-        printf("========================================\n\n");
-        /* Retorna ao centro de pesquisas, recarrega as Pokébolas e esvazia a lista de capturados do treinador
-        preenchendo a lista de Recuperados do PokeCenter.
-        */
-        RetornaCentroPesquisa (trainer, poke_center);
-        printf("Treinador (a) %s retornou ao Centro de Pesquisa.\n\n", (*trainer).nome);
-        printf("Entregando Pokémon ao Centro de Pesquisa.\n\n");
-        printf("Treinador (a) %s recebeu %d Pokébolas.\n\n", (*trainer).nome, (*trainer).QtdPokebolas);
-        printf("-----------------------------------------\n");
-    } else {
-        printf("-----------------------------------------\n");
-    }
-}
 
-double Distancia (Treinador **trainer1, Pokemon *poke){
-    int PosTreinador[2];
-    int PosPokemon[2];
-    // Preenche o vetor com os valores do treinador
-    getCoordenadaTreinador (*trainer1, PosTreinador);
-    // Preenche ovvetor com os valores do Pokémon
-    getCoordenadaPoke (poke, PosPokemon);
-    // Calcula a distância entre o treinador e o pokémon
-    double dist = ((PosTreinador[0]-PosPokemon[0])*(PosTreinador[0]-PosPokemon[0]))+((PosTreinador[1]-PosPokemon[1])*(PosTreinador[1]-PosPokemon[1]));
-    return sqrt(dist);
-}
 
 void Inicializa (CentroPesquisa **poke_center, Treinador **trainer1, Treinador **trainer2){
     // Aloca memória para as variáveis recebidas da main 
@@ -62,13 +20,6 @@ void Inicializa (CentroPesquisa **poke_center, Treinador **trainer1, Treinador *
     (*trainer2) = t2;
     // Inicializa os TAD's Treinador e PokeCenter, juntamente de suas listas.
     RegistraDados (trainer1, trainer2, poke_center);
-    printf("========================================\n");
-    printf("          INÍCIO DA MISSÃO              \n");
-    printf("========================================\n\n");
-    printf("Treinador(a): %s: posição (%d, %d) | Pokébolas: %d \n", (**trainer1).nome, (**trainer1).coordenada_treinador[0], ((**trainer1).coordenada_treinador[1]), (**trainer1).QtdPokebolas);
-    printf("Treinador(a): %s: posição (%d, %d) | Pokébolas: %d \n\n", (**trainer2).nome, (**trainer2).coordenada_treinador[0], ((**trainer2).coordenada_treinador[1]), (**trainer2).QtdPokebolas);
-    printf("Pokémons fugitivos a serem resgatados: %d\n\n", (**poke_center).total);
-    printf("----------------------------------------\n");
 }
 
 
@@ -80,66 +31,27 @@ void RegistraDados (Treinador **trainer1, Treinador **trainer2, CentroPesquisa *
     InsereFugitivos (*poke_center);
 }
 
-void AtribuiMission (CentroPesquisa **poke_center, Treinador **trainer1, Treinador **trainer2){
-    // Enquanto houver um Pokémon no topo da lista, atribui as missões aos treinadores.
-    while ((**poke_center).PokemonsFugitivos.Primeiro){
-        // Guarda a distância dos dois treinadores ao primeiro Pokémon da lista
-        double dist1 = Distancia(trainer1, &(**poke_center).PokemonsFugitivos.Primeiro->pokemon);
-        double dist2 = Distancia(trainer2, &(**poke_center).PokemonsFugitivos.Primeiro->pokemon);
-        // Atribui a missão ao treinador mais próximo do primeiro Pokémon da lista. Ou em caso de empate ao treinador de menor índice.
-        if (dist1<dist2){
-            Mission (*trainer1, *trainer2, *poke_center, dist1, dist2);
+void GerarCombinacoes (int vetor[], int start, int n, int k, int maxk){
+    if (k>maxk){
+        for (int i = 1; i<=maxk; i++){
+            printf("%d ", vetor[i]);
         }
-           else if (dist2<dist1){
-            Mission (*trainer2, *trainer1, *poke_center, dist2, dist1);
-        } else if ((**trainer1).id_trainer<(**trainer2).id_trainer){
-            Mission (*trainer1, *trainer2, *poke_center, dist1, dist2);
-        } else {
-            Mission (*trainer2, *trainer1, *poke_center, dist2, dist1);
-        }
+        printf("\n");
+        return ;
     }
-    printf("========================================\n");
-    printf("    Todos os Pokémons foram resgatados    \n");
-    printf("========================================\n\n");
-    //Esvazia a lista de capturados dos dois treinadores, finalizando a missão.
-    RetornaCentroPesquisa ((*trainer1), (*poke_center));
-    RetornaCentroPesquisa ((*trainer2), (*poke_center));
-    printf("Ambos os treinadores retornam ao Centro de Pesquisa.\n\n");
-    printf("Treinador (a) %s devolve os Pokémon.\n\n", (**trainer1).nome);
-    printf("Treinador (a) %s devolve os Pokémon.\n\n", (**trainer2).nome);
-    printf("========================================\n");
-    printf("         MISSÃO CONCLUÍDA               \n");
-    printf("========================================\n");
-    // Gera o relatório final após a conclusão da missão.
-    RelatorioFinal ((*poke_center));
+    for (int i = start; i<=n; i++){
+        vetor[k] = i;
+        GerarCombinacoes(vetor, i+1, n, k+1, maxk);
+    }
 }
-
-void RetornaCentroPesquisa (Treinador *trainer, CentroPesquisa *poke_center){
-    int PositionPokeCenter[2] = {0, 0};
-    // Movimenta o treinador para a coordenada (0,0) e aribui um número de pokébolas aleatório a bolsa dele.
-    MovimentaTreinador (trainer, PositionPokeCenter);
-    int randompokebolas;
-    RecargaPokebolas(&randompokebolas);
-    setPokebolasTreinador (trainer, randompokebolas);
-    // Remove todos os pokémons da lista do treinador e insere cada um na lista de capturados.
-    RemovePokemonTreinador (&(*trainer).ListaCapturados, &(*poke_center).PokemonsRecuperados);
-}
-
-void RelatorioFinal (CentroPesquisa *poke_center){
-    // 
-    FILE *p;
-    p = fopen("relatorio.txt", "w");
-    if (p == NULL){
-        printf ("Não foi possível gerar o relatório da missão.");
-    } else {
-        // Cria um ponteiro para PokeLista que recebe o primeiro nó
-        PokeLista *pointer = (*poke_center).PokemonsRecuperados.Primeiro;
-        fprintf(p, "Pokemon recuperados: \n");
-        // Percorre a lista encadeada usando o ponteiro e preenche o relatório lendo a lista de recuperados
-        while (pointer){
-            fprintf(p, "%d %s\n", (*pointer).pokemon.pokedex, (*pointer).pokemon.nome);
-            pointer = (*pointer).pProx;
-        }
-        fclose(p);
+void InicializaVetorPointerPokemon (Pokemon *vetor[], CentroPesquisa *PokeCenter){
+    if (ListaEVazia(&PokeCenter->PokemonsFugitivos)){
+        printf("Impossível inicializar o vetor de ponteiro para Pokémon pois a lista está vazia\n");
+         return;
+    }
+    PokeLista *aux = PokeCenter->PokemonsFugitivos.Primeiro;
+    for (int i = 1; i<=PokeCenter->total_pokemons; i++){
+        vetor[i] = &aux->pokemon;
+        aux = aux->pProx;
     }
 }

@@ -7,12 +7,11 @@ typedef struct pokemon{
     int pokedex;
     char nome[50];
     char tipo[50];
-    int coordenadas[2];
+    int poder;
+    int energia;
 }Pokemon;
 
-void InicializaPokemon (Pokemon *poke, int id, int pokedex, char nome[], char tipo[], int x, int y);
-void ImprimePokemon (Pokemon *poke);
+void InicializaPokemon (Pokemon *poke, int id, int pokedex, char nome[], char tipo[], int poder, int energia);
 void getNomePoke (Pokemon *poke, char nomePoke[]);
-void getCoordenadaPoke (Pokemon *poke, int coordenada_pokemon[]);
 
 #endif

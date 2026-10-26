@@ -18,7 +18,6 @@ int ListaEVazia (Lista *lista);
 void InicializaLista(Lista *lista);
 void InserePokemon(Lista *lista, Pokemon *poke);
 int RemovePokemon (Lista *lista);
-void BuscaPokemon (Lista *lista, int id);
 void ImprimePokemons (Lista *lista);
 
 

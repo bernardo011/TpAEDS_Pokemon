@@ -8,16 +8,13 @@ typedef struct treinador Treinador;
 
 // Struct que armazena duas listas encadeadas e o total de pokémons fugitivos.
 typedef struct centropesquisa{
-    int total;
+    int total_pokemons;
+    int total_energia;
     Lista PokemonsFugitivos;
-    Lista PokemonsRecuperados;
 }CentroPesquisa;
 
 void InicializaCentroPesquisa (CentroPesquisa *cp);
 void InsereFugitivos (CentroPesquisa *cp);
 int RemovePokemonFugitivo (Lista *lista);
-void ImprimeFugitivos (CentroPesquisa *cp);
-void RecebePokemons (CentroPesquisa *cp, Treinador *trainer);
-void RecargaPokebolas (int *x);
 
 #endif

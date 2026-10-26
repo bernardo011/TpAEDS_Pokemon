@@ -6,7 +6,6 @@
 // A inicialização do Centro de Pesquisas consiste em inicializar as duas listas dentro dele usando a função InicializaLista.
 void InicializaCentroPesquisa (CentroPesquisa *cp){
     InicializaLista(&cp->PokemonsFugitivos);
-    InicializaLista(&cp->PokemonsRecuperados);
 };
 
 /* A função InsereFugitivos "pula" as duas primeiras linhas não nulas do arquivo usando um loop for e um fscanf
@@ -21,24 +20,27 @@ void InsereFugitivos (CentroPesquisa *cp){
         char nome[50];
         char tipo[50];
         int pokeball;
-        int total;
+        int total_pokemons;
+        int total_energia;
         int dex;
-        int x;
-        int y;
+        int poder;
+        int energia;
         Pokemon Greninja;
 
         for (int i = 0; i<2; i++){
-            (fscanf (arq, "%49s %d", nome, &pokeball) == 2);
+            (fscanf (arq, "%49s", nome) == 2);   
         }
         /* Após as duas primeiras linhas não nulas, lê o próximo número inteiro que informa o total de pokémons fugitivos.
         */
-        fscanf (arq, "%d", &total);
-        cp -> total = total;
+        fscanf (arq, "%d", &total_pokemons);
+        fscanf (arq, "%d", &total_energia);
+        cp -> total_pokemons = total_pokemons;
+        cp -> total_energia = total_energia;
         /* Enquanto a função fscanf retornar 5 valores lidos, o loop while inicializa o Pokémon lido e insere na lista de
         fugitivos.
         */
-        while (fscanf (arq, "%d %s %s %d %d", &dex, nome, tipo, &x, &y) == 5){
-            InicializaPokemon(&Greninja, id, dex, nome, tipo, x, y);
+        while (fscanf (arq, "%d %s %s %d %d", &dex, nome, tipo, &poder, &energia) == 5){
+            InicializaPokemon(&Greninja, id, dex, nome, tipo, poder, energia);
             InserePokemon(&cp->PokemonsFugitivos, &Greninja);
             id++;
         }

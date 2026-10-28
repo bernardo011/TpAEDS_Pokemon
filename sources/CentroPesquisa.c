@@ -5,7 +5,7 @@
 
 // A inicialização do Centro de Pesquisas consiste em inicializar as duas listas dentro dele usando a função InicializaLista.
 void InicializaCentroPesquisa (CentroPesquisa *cp){
-    InicializaLista(&cp->PokemonsFugitivos);
+    InicializaLista(&cp->EstoquePokemon);
 };
 
 /* A função InsereFugitivos "pula" as duas primeiras linhas não nulas do arquivo usando um loop for e um fscanf
@@ -41,7 +41,7 @@ void InsereFugitivos (CentroPesquisa *cp){
         */
         while (fscanf (arq, "%d %s %s %d %d", &dex, nome, tipo, &poder, &energia) == 5){
             InicializaPokemon(&Greninja, id, dex, nome, tipo, poder, energia);
-            InserePokemon(&cp->PokemonsFugitivos, &Greninja);
+            InserePokemon(&cp->EstoquePokemon, &Greninja);
             id++;
         }
         fclose(arq);
@@ -49,15 +49,13 @@ void InsereFugitivos (CentroPesquisa *cp){
 
 };
 // A remoção consiste em fazer o ponteiro para primeiro receber o próximo e liberar o memória do antigo primeiro.
-int RemovePokemonFugitivo (Lista *lista){
+int RemovePokemonFugitivo (PokeLista *lista){
         if (ListaEVazia(lista)){
             return 0;
         }
-        PokeLista *aux = lista -> Primeiro;
+        PokeCelula *aux = lista -> Primeiro;
         (*lista).Primeiro = (*lista).Primeiro -> pProx;
         free(aux);
 }
 // A recarga de pokébolas é feita atribuindo um valor aleatório entre 1 e 20 ao ponteiro x.
-void RecargaPokebolas (int *x){
-    *x = (rand()%20)+1;
-};
+

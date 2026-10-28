@@ -4,30 +4,36 @@
 #include "Pokemon.h"
 #include "Treinador.h"
 #include "CentroPesquisa.h"
-#include "stdlib.h"
+#include <stdlib.h>
+#include <time.h>
 
 int main(){
+
+    clock_t inicio, fim;
+    double tempo_total;
+    inicio = clock();
     // Cria os ponteiros que terão um endereço de memória dinâmicamente alocado pela função Inicializa
     CentroPesquisa *poke_center;
     Treinador *trainer1, *trainer2;
     // Atribui um endereço de memória as variáveis criadas e dá início a missão.
     Inicializa (&poke_center, &trainer1, &trainer2);
     // Atribui as missões sucessivamentes até que a lista de pokémons fugitivos esteja vazia
-    ImprimePokemons (&poke_center->PokemonsFugitivos);
-    printf("\n%d\n", (*poke_center).total_pokemons);
-    printf("\n%d\n", (*poke_center).total_energia);
-    printf("%s\n%s", (*trainer1).nome, (*trainer2).nome);
-    int vetor[100];
-    for (int i = 0; i<=5; i++){
-        GerarCombinacoes(vetor, 1, 5, 1, i);
+    printf("%d\n", (*poke_center).total_pokemons);
+    int *v;
+    v = (int*) malloc (((*poke_center).total_pokemons+1) * sizeof(int));
+    int poder_atual = 0;
+    int energia_atual = 0;
+    int energia_total = (*poke_center).total_energia;
+    for (int i = 0; i<=(*poke_center).total_pokemons; i++){
+        GerarCombinacoes(v, 1, (*poke_center).total_pokemons+1, 1, i, &poke_center->EstoquePokemon, &poder_atual, &energia_atual, energia_total);
     }
-    Pokemon *vetor_pokemon[100];
-    InicializaVetorPointerPokemon (vetor_pokemon, poke_center);
-    for (int i = 1; i<=poke_center->total_pokemons; i++){
-        printf("%d %s %s (%d, %d)\n", vetor_pokemon[i]->pokedex, vetor_pokemon[i]->nome, vetor_pokemon[i]->tipo, vetor_pokemon[i]->poder, vetor_pokemon[i]->energia);
-    }
+    printf("\n");
+    printf("%d, %d", poder_atual, energia_atual);
     free(trainer1);
     free(trainer2);
     free(poke_center);
+    fim = clock();
+    tempo_total = (double)(fim-inicio)/CLOCKS_PER_SEC;
+    printf("\nTempo total de execução %f segundos\n", tempo_total);
     return 0;
 }

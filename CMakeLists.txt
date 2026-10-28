@@ -16,3 +16,5 @@ set(SOURCES
 )
 add_executable(programa ${SOURCES})
 target_link_libraries(programa m)
+target_compile_options(programa PRIVATE -fsanitize=address -g)
+target_link_options(programa PRIVATE -fsanitize=address)

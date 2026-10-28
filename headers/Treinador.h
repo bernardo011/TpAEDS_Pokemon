@@ -11,7 +11,7 @@ typedef struct treinador {
     int id_trainer;
     char nome[50];
     int coordenada_treinador[2];
-    Lista ListaCapturados;
+    PokeLista TimeTreinador;
     int QtdPokebolas;
 } Treinador;
 

@@ -3,6 +3,7 @@
 #include "PokeLista.h"
 #include "Pokemon.h"
 #include "Treinador.h"
+#include "TimePokemon.c"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -31,27 +32,13 @@ void RegistraDados (Treinador **trainer1, Treinador **trainer2, CentroPesquisa *
     InsereFugitivos (*poke_center);
 }
 
-void GerarCombinacoes (int vetor[], int start, int n, int k, int maxk){
+void GerarCombinacoes (int vetor[], int start, int n, int k, int maxk, PokeLista *EstoquePokemon, int *poder_atual, int *energia_atual, int energia_total){
     if (k>maxk){
-        for (int i = 1; i<=maxk; i++){
-            printf("%d ", vetor[i]);
-        }
-        printf("\n");
+        VerificaTime(vetor, maxk, EstoquePokemon, poder_atual, energia_atual, energia_total);
         return ;
     }
     for (int i = start; i<=n; i++){
         vetor[k] = i;
-        GerarCombinacoes(vetor, i+1, n, k+1, maxk);
-    }
-}
-void InicializaVetorPointerPokemon (Pokemon *vetor[], CentroPesquisa *PokeCenter){
-    if (ListaEVazia(&PokeCenter->PokemonsFugitivos)){
-        printf("Impossível inicializar o vetor de ponteiro para Pokémon pois a lista está vazia\n");
-         return;
-    }
-    PokeLista *aux = PokeCenter->PokemonsFugitivos.Primeiro;
-    for (int i = 1; i<=PokeCenter->total_pokemons; i++){
-        vetor[i] = &aux->pokemon;
-        aux = aux->pProx;
+        GerarCombinacoes(vetor, i+1, n, k+1, maxk, EstoquePokemon, poder_atual, energia_atual, energia_total);
     }
 }

@@ -16,11 +16,11 @@ void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2){
             if (index == 0){
                 strcpy ((*trainer1).nome, nomeTreinador);
                 trainer1 -> id_trainer = 1;
-                InicializaLista (&((*trainer1).ListaCapturados));
+                InicializaLista (&((*trainer1).TimeTreinador));
             } else if (index == 1){
                 strcpy ((*trainer2).nome, nomeTreinador);
                 trainer2 -> id_trainer = 2;
-                InicializaLista (&((*trainer2).ListaCapturados));
+                InicializaLista (&((*trainer2).TimeTreinador));
             }
             index++;
     }

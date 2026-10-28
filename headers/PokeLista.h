@@ -4,21 +4,22 @@
 #include "Pokemon.h"
 
 //TAD Lista que guarda um ponteiro para a primeira célula de uma lista de pokémons
-typedef struct lista{
-    struct pokelista *Primeiro;
-}Lista;
+typedef struct pokelista{
+    struct pokecelula *Primeiro;
+}PokeLista;
 
 // TAD PokeLista que é uma célula de uma lista que guarda pokémons. Possui um ponteiro que aponta para a célula imediatamente posterior a ela.
-typedef struct pokelista{
+typedef struct pokecelula{
     Pokemon pokemon;
-    struct pokelista * pProx;
-} PokeLista;
+    struct pokecelula * pProx;
+} PokeCelula;
 
-int ListaEVazia (Lista *lista);
-void InicializaLista(Lista *lista);
-void InserePokemon(Lista *lista, Pokemon *poke);
-int RemovePokemon (Lista *lista);
-void ImprimePokemons (Lista *lista);
+int ListaEVazia (PokeLista *lista);
+void InicializaLista(PokeLista *lista);
+void InserePokemon(PokeLista *lista, Pokemon *poke);
+int RemovePokemon (PokeLista *lista);
+void ImprimePokemons (PokeLista *lista);
+void EsvaziaPokeLista (PokeLista *lista);
 
 
 #endif

@@ -11,7 +11,7 @@ void InicializaCentroPesquisa (CentroPesquisa *cp){
 /* A função InsereFugitivos "pula" as duas primeiras linhas não nulas do arquivo usando um loop for e um fscanf
 que guarda uma string e um inteiro duas vezes. Isso é feito para ignorar as linhas dos treinadores.
 */
-void InsereFugitivos (CentroPesquisa *cp){
+void InserePokemonEntrada (CentroPesquisa *cp){
     FILE *arq = fopen("teste1.txt", "r");
     if (arq==NULL){
         printf("Arquivo nulo");
@@ -48,14 +48,4 @@ void InsereFugitivos (CentroPesquisa *cp){
     };
 
 };
-// A remoção consiste em fazer o ponteiro para primeiro receber o próximo e liberar o memória do antigo primeiro.
-int RemovePokemonFugitivo (PokeLista *lista){
-        if (ListaEVazia(lista)){
-            return 0;
-        }
-        PokeCelula *aux = lista -> Primeiro;
-        (*lista).Primeiro = (*lista).Primeiro -> pProx;
-        free(aux);
-}
-// A recarga de pokébolas é feita atribuindo um valor aleatório entre 1 e 20 ao ponteiro x.
 

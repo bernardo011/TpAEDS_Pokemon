@@ -17,17 +17,21 @@ int main(){
     TimePokemon *MelhorTime;
     CentroPesquisa *poke_center;
     Treinador *trainer1, *trainer2;
-    // Atribui um endereço de memória as variáveis criadas e dá início a missão.
+    // Atribui um endereço de memória as variáveis criadas e dá início a missão.    
     Inicializa (&poke_center, &trainer1, &trainer2, &MelhorTime);
+    printf("%d", (*poke_center).total_pokemons);
     // Atribui as missões sucessivamentes até que a lista de pokémons fugitivos esteja vazia
     int *v;
+
     v = (int*) malloc (((*poke_center).total_pokemons+1) * sizeof(int));
     int poder_atual = 0;
     int energia_atual = 0;
     int energia_total = (*poke_center).total_energia;
+    int count = 0;
     for (int i = 0; i<=(*poke_center).total_pokemons; i++){
-        GerarCombinacoes(v, 1, (*poke_center).total_pokemons+1, 1, i, &poke_center->EstoquePokemon, energia_total, MelhorTime);
+        GerarCombinacoes(v, 1, (*poke_center).total_pokemons+1, 1, i, &poke_center->EstoquePokemon, energia_total, MelhorTime, &count);
     }
+
     printf("\n Poder: %d, Energia: %d\n",(*MelhorTime).poder, (*MelhorTime).energia);
     printf("Melhor Time: \n");
     ImprimePokemons(&(*MelhorTime).MelhorTime);
@@ -41,5 +45,6 @@ int main(){
     free(poke_center);
     free(trainer1);
     free(trainer2);
+    printf("%d", count);
     return 0;
 }

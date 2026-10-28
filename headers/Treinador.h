@@ -10,9 +10,7 @@ typedef struct pokemon Pokemon;
 typedef struct treinador {
     int id_trainer;
     char nome[50];
-    int coordenada_treinador[2];
     PokeLista TimeTreinador;
-    int QtdPokebolas;
 } Treinador;
 
 void InicializaTreinadores(Treinador *trainer1, Treinador *trainer2);

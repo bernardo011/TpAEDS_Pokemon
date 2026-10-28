@@ -33,17 +33,17 @@ void RegistraDados (Treinador **trainer1, Treinador **trainer2, CentroPesquisa *
     InicializaLista(&(*MelhorTime)->MelhorTime);
     (*MelhorTime)->poder = 0;
     (*MelhorTime)->energia = 0;
-    // Preenche a lista de fugitivos do PokeCenter de acordo com o arquivo de teste.
-    InsereFugitivos (*poke_center);
+    InserePokemonEntrada (*poke_center);
 }
 
-void GerarCombinacoes (int vetor[], int start, int n, int k, int maxk, PokeLista *EstoquePokemon, int energia_total, TimePokemon *MelhorTime){
+void GerarCombinacoes (int vetor[], int start, int n, int k, int maxk, PokeLista *EstoquePokemon, int energia_total, TimePokemon *MelhorTime, int *count){
     if (k>maxk){
         VerificaTime(vetor, maxk, EstoquePokemon, energia_total, MelhorTime);
+        (*count)++;
         return ;
     }
     for (int i = start; i<=n; i++){
         vetor[k] = i;
-        GerarCombinacoes(vetor, i+1, n, k+1, maxk, EstoquePokemon, energia_total, MelhorTime);
+        GerarCombinacoes(vetor, i+1, n, k+1, maxk, EstoquePokemon, energia_total, MelhorTime, count);
     }
 }

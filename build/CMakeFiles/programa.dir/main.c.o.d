@@ -22,6 +22,7 @@ CMakeFiles/programa.dir/main.c.o: \
  /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Treinador.h \
  /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
  /home/bernardo/Projects/TpAEDS_Pok-mon/headers/CentroPesquisa.h \
+ /home/bernardo/Projects/TpAEDS_Pok-mon/headers/TimePokemon.h \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
  /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \

@@ -5,6 +5,7 @@ CMakeFiles/programa.dir/main.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/main.c 
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/CentroPesquisa.h \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
+  /home/bernardo/Projects/TpAEDS_Pok-mon/headers/TimePokemon.h \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Treinador.h \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/function_call.h \
   /usr/include/alloca.h \
@@ -482,8 +483,6 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 
 /home/bernardo/Projects/TpAEDS_Pok-mon/main.c:
 
-/usr/include/bits/types/FILE.h:
-
 /usr/include/bits/stdint-intn.h:
 
 /usr/include/stdc-predef.h:
@@ -512,6 +511,14 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 
 /usr/include/features-time64.h:
 
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/lib/crti.o:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/headers/CentroPesquisa.h:
+
 /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h:
 
 /usr/include/bits/atomic_wide_counter.h:
@@ -534,21 +541,15 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 
 /usr/include/bits/endianness.h:
 
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/bits/stdlib-float.h:
-
 /usr/include/bits/types/sigset_t.h:
 
 /usr/include/bits/floatn-common.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/bits/types/FILE.h:
 
-/usr/lib/crti.o:
+/usr/include/bits/stdlib-float.h:
 
-/home/bernardo/Projects/TpAEDS_Pok-mon/headers/CentroPesquisa.h:
-
-/usr/include/bits/floatn.h:
+/usr/include/bits/types/__FILE.h:
 
 CMakeFiles/programa.dir/sources/Treinador.c.o:
 
@@ -580,9 +581,9 @@ CMakeFiles/programa.dir/sources/Treinador.c.o:
 
 /usr/include/bits/types/struct_timespec.h:
 
-/home/bernardo/Projects/TpAEDS_Pok-mon/headers/TimePokemon.h:
-
 /usr/include/bits/stdio_lim.h:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/headers/TimePokemon.h:
 
 /usr/include/bits/types/struct_timeval.h:
 
@@ -593,6 +594,10 @@ CMakeFiles/programa.dir/sources/Treinador.c.o:
 /usr/include/bits/struct_rwlock.h:
 
 /usr/include/bits/types/time_t.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types/timer_t.h:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
@@ -607,7 +612,3 @@ CMakeFiles/programa.dir/sources/Treinador.c.o:
 /home/bernardo/Projects/TpAEDS_Pok-mon/sources/CentroPesquisa.c:
 
 /usr/include/gnu/stubs.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/stdio.h:

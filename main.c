@@ -4,6 +4,7 @@
 #include "Pokemon.h"
 #include "Treinador.h"
 #include "CentroPesquisa.h"
+#include "TimePokemon.h"
 #include <stdlib.h>
 #include <time.h>
 
@@ -13,27 +14,32 @@ int main(){
     double tempo_total;
     inicio = clock();
     // Cria os ponteiros que terão um endereço de memória dinâmicamente alocado pela função Inicializa
+    TimePokemon *MelhorTime;
     CentroPesquisa *poke_center;
     Treinador *trainer1, *trainer2;
     // Atribui um endereço de memória as variáveis criadas e dá início a missão.
-    Inicializa (&poke_center, &trainer1, &trainer2);
+    Inicializa (&poke_center, &trainer1, &trainer2, &MelhorTime);
     // Atribui as missões sucessivamentes até que a lista de pokémons fugitivos esteja vazia
-    printf("%d\n", (*poke_center).total_pokemons);
     int *v;
     v = (int*) malloc (((*poke_center).total_pokemons+1) * sizeof(int));
     int poder_atual = 0;
     int energia_atual = 0;
     int energia_total = (*poke_center).total_energia;
     for (int i = 0; i<=(*poke_center).total_pokemons; i++){
-        GerarCombinacoes(v, 1, (*poke_center).total_pokemons+1, 1, i, &poke_center->EstoquePokemon, &poder_atual, &energia_atual, energia_total);
+        GerarCombinacoes(v, 1, (*poke_center).total_pokemons+1, 1, i, &poke_center->EstoquePokemon, energia_total, MelhorTime);
     }
-    printf("\n");
-    printf("%d, %d", poder_atual, energia_atual);
-    free(trainer1);
-    free(trainer2);
-    free(poke_center);
+    printf("\n Poder: %d, Energia: %d\n",(*MelhorTime).poder, (*MelhorTime).energia);
+    printf("Melhor Time: \n");
+    ImprimePokemons(&(*MelhorTime).MelhorTime);
     fim = clock();
     tempo_total = (double)(fim-inicio)/CLOCKS_PER_SEC;
     printf("\nTempo total de execução %f segundos\n", tempo_total);
+    EsvaziaPokeLista(&poke_center->EstoquePokemon);
+    EsvaziaPokeLista(&(*MelhorTime).MelhorTime);
+    free(v);
+    free(MelhorTime);
+    free(poke_center);
+    free(trainer1);
+    free(trainer2);
     return 0;
 }

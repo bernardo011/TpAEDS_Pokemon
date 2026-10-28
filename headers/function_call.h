@@ -5,9 +5,10 @@ typedef struct centropesquisa CentroPesquisa;
 typedef struct treinador Treinador;
 typedef struct pokemon Pokemon;
 typedef struct pokelista PokeLista;
+typedef struct timepokemon TimePokemon;
 
-void Inicializa (CentroPesquisa **poke_center, Treinador **trainer1, Treinador **trainer2);
-void RegistraDados (Treinador **trainer1, Treinador **trainer2, CentroPesquisa **poke_center);
-void GerarCombinacoes (int vetor[], int start, int n, int k, int maxk, PokeLista *EstoquePokemon, int *poder_atual, int *energia_atual, int energia_total);
+void Inicializa (CentroPesquisa **poke_center, Treinador **trainer1, Treinador **trainer2, TimePokemon **MelhorTime);
+void RegistraDados (Treinador **trainer1, Treinador **trainer2, CentroPesquisa **poke_center, TimePokemon **MelhorTime);
+void GerarCombinacoes (int vetor[], int start, int n, int k, int maxk, PokeLista *EstoquePokemon, int energia_total, TimePokemon *MelhorTime);
 void InicializaVetorPointerPokemon (Pokemon *vetor[], CentroPesquisa *PokeCenter);
 #endif

@@ -4,10 +4,11 @@
 typedef struct pokelista PokeLista;
 
 typedef struct timepokemon{
-    int tamanho;
-    int *position;
+    PokeLista MelhorTime;
+    int poder;
+    int energia;
 } TimePokemon;
 
-void VerificaTime (int * subconjunto, int num_elementos, PokeLista *EstoquePokemons, int *poder_atual, int *energia_atual, int energia_total);
+void VerificaTime (int * subconjunto, int num_elementos, PokeLista *EstoquePokemon0s, int energia_total, TimePokemon *MelhorTime);
 
 #endif

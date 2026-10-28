@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/bernardo/Projects/TpAEDS_Pok-mon/headers
 
-C_FLAGS = -std=gnu99
+C_FLAGS = -std=gnu99 -fsanitize=address -g
 

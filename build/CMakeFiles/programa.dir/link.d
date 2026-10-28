@@ -2,6 +2,8 @@ programa: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libasan.so \
   CMakeFiles/programa.dir/main.c.o \
   CMakeFiles/programa.dir/sources/function_call.c.o \
   CMakeFiles/programa.dir/sources/PokeLista.c.o \
@@ -43,6 +45,8 @@ programa: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o \
+  /usr/lib/../lib/libstdc++.so.6 \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libgcc_s.so.1 \
   /usr/lib/ld-linux-x86-64.so.2
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o:
@@ -50,6 +54,10 @@ programa: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libasan.so:
 
 CMakeFiles/programa.dir/main.c.o:
 
@@ -132,5 +140,9 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o:
+
+/usr/lib/../lib/libstdc++.so.6:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libgcc_s.so.1:
 
 /usr/lib/ld-linux-x86-64.so.2:

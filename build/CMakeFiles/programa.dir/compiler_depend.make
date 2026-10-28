@@ -25,6 +25,7 @@ CMakeFiles/programa.dir/main.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/main.c 
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/types.h \
@@ -32,15 +33,19 @@ CMakeFiles/programa.dir/main.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/main.c 
   /usr/include/bits/types/__FILE.h \
   /usr/include/bits/types/__fpos64_t.h \
   /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/sigset_t.h \
   /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
   /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/bits/typesizes.h \
@@ -59,6 +64,7 @@ CMakeFiles/programa.dir/main.c.o: /home/bernardo/Projects/TpAEDS_Pok-mon/main.c 
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
+  /usr/include/time.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
 
@@ -283,8 +289,10 @@ CMakeFiles/programa.dir/sources/function_call.c.o: /home/bernardo/Projects/TpAED
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/CentroPesquisa.h \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
+  /home/bernardo/Projects/TpAEDS_Pok-mon/headers/TimePokemon.h \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Treinador.h \
   /home/bernardo/Projects/TpAEDS_Pok-mon/headers/function_call.h \
+  /home/bernardo/Projects/TpAEDS_Pok-mon/sources/TimePokemon.c \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
@@ -353,14 +361,17 @@ CMakeFiles/programa.dir/sources/function_call.c.o: /home/bernardo/Projects/TpAED
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
 
-programa: /usr/lib/Scrt1.o \
+programa: /usr/lib/libstdc++.so.6 \
+  /usr/lib/Scrt1.o \
   /usr/lib/crti.o \
   /usr/lib/crtn.o \
+  /usr/lib/libasan.so \
   /usr/lib/libc.so \
   /usr/lib/libgcc_s.so.1 \
   /usr/lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic_asneeded.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a \
@@ -411,6 +422,8 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 
 /usr/lib/crtn.o:
 
+/usr/lib/libstdc++.so.6:
+
 /usr/include/bits/mathcalls.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so:
@@ -427,6 +440,8 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 
 /usr/include/bits/flt-eval-method.h:
 
+/home/bernardo/Projects/TpAEDS_Pok-mon/sources/TimePokemon.c:
+
 /home/bernardo/Projects/TpAEDS_Pok-mon/sources/function_call.c:
 
 /usr/include/bits/mathcalls-macros.h:
@@ -437,17 +452,19 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 
 /usr/include/strings.h:
 
-/usr/include/bits/types/locale_t.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h:
 
-/usr/include/bits/types/__locale_t.h:
+/usr/include/time.h:
 
-/usr/include/bits/types/FILE.h:
+/usr/lib/libm.so.6:
+
+/usr/include/sys/select.h:
+
+/usr/include/sys/cdefs.h:
 
 /usr/lib/libc_nonshared.a:
 
 /usr/include/bits/types.h:
-
-/usr/include/sys/cdefs.h:
 
 /usr/include/string.h:
 
@@ -457,11 +474,15 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 
 /usr/include/bits/byteswap.h:
 
+/usr/include/bits/time.h:
+
 /usr/include/bits/thread-shared-types.h:
 
 /usr/lib/Scrt1.o:
 
 /home/bernardo/Projects/TpAEDS_Pok-mon/main.c:
+
+/usr/include/bits/types/FILE.h:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -472,6 +493,12 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 /home/bernardo/Projects/TpAEDS_Pok-mon/sources/Pokemon.c:
 
 /usr/include/bits/libc-header-start.h:
+
+/usr/include/stdlib.h:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/headers/function_call.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o:
 
 /usr/include/bits/long-double.h:
 
@@ -498,6 +525,10 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o:
 /usr/include/bits/endian.h:
 
 /usr/include/bits/types/__sigset_t.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/bits/waitflags.h:
 
@@ -527,9 +558,13 @@ CMakeFiles/programa.dir/sources/Treinador.c.o:
 
 /usr/include/bits/wordsize.h:
 
+/usr/include/bits/types/__locale_t.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h:
 
 /usr/include/bits/types/__mbstate_t.h:
+
+/usr/lib/libasan.so:
 
 /usr/include/bits/types/clock_t.h:
 
@@ -539,27 +574,25 @@ CMakeFiles/programa.dir/sources/Treinador.c.o:
 
 /usr/include/bits/typesizes.h:
 
+/usr/include/bits/types/locale_t.h:
+
 /usr/include/bits/types/struct_FILE.h:
 
-/usr/lib/libm.so.6:
-
-/usr/include/sys/select.h:
-
 /usr/include/bits/types/struct_timespec.h:
+
+/home/bernardo/Projects/TpAEDS_Pok-mon/headers/TimePokemon.h:
 
 /usr/include/bits/stdio_lim.h:
 
 /usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/types/struct_tm.h:
 
 /usr/include/bits/mathcalls-helper-functions.h:
 
 /usr/include/bits/struct_rwlock.h:
 
 /usr/include/bits/types/time_t.h:
-
-/home/bernardo/Projects/TpAEDS_Pok-mon/headers/function_call.h:
-
-/usr/include/stdlib.h:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
@@ -578,7 +611,3 @@ CMakeFiles/programa.dir/sources/Treinador.c.o:
 /usr/include/bits/types/timer_t.h:
 
 /usr/include/stdio.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h:
-
-/usr/include/sys/types.h:

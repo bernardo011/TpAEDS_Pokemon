@@ -42,11 +42,7 @@ void ImprimePokemons (PokeLista *lista){
     } else {
         PokeCelula *aux = lista -> Primeiro;
         while (aux){
-            printf("Id do Pokémon: %d\n", aux -> pokemon.id_pokemon);
-            printf("Número da Pokédex: %d\n", aux -> pokemon.pokedex);
-            printf("Nome do Pokémon: %s\n", aux -> pokemon.nome);
-            printf("Tipo do Pokémon: %s\n", aux -> pokemon.tipo);
-            printf("Poder e Energia: (%d,%d)\n", aux -> pokemon.poder, aux -> pokemon.energia);
+            printf("ID: %-4d| Nome: %-15s| Tipo: %-15s| Poder: %-2d| Energia: %-2d\n", aux -> pokemon.pokedex, aux->pokemon.nome, aux->pokemon.tipo, aux->pokemon.poder, aux->pokemon.energia);
             aux = (*aux).pProx;
         }
     }    
@@ -61,5 +57,27 @@ void EsvaziaPokeLista (PokeLista *lista){
         PokeCelula *aux2 = aux;
         aux = aux->pProx;
         free(aux2);
+    }
+}
+
+void DivideLista (PokeLista *fonte, PokeLista *trainer1, PokeLista *trainer2){
+    PokeCelula* Fast;
+    PokeCelula* Slow;
+    if (fonte->Primeiro == NULL || fonte->Primeiro->pProx == NULL){
+        trainer1->Primeiro = fonte->Primeiro;
+        trainer2->Primeiro = NULL;
+    }else{
+        Slow=fonte->Primeiro;
+        Fast=fonte->Primeiro->pProx;
+        while (Fast != NULL) {
+            Fast = Fast->pProx;
+            if (Fast != NULL) {
+                Slow = Slow->pProx;
+                Fast = Fast->pProx;
+            }
+        }
+        trainer1->Primeiro=fonte->Primeiro;
+        trainer2->Primeiro=Slow->pProx;
+        Slow->pProx=NULL;
     }
 }

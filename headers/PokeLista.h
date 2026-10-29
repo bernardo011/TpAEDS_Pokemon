@@ -20,6 +20,6 @@ void InserePokemon(PokeLista *lista, Pokemon *poke);
 int RemovePokemon (PokeLista *lista);
 void ImprimePokemons (PokeLista *lista);
 void EsvaziaPokeLista (PokeLista *lista);
-
+void DivideLista (PokeLista *fonte, PokeLista *trainer1, PokeLista *trainer2);
 
 #endif

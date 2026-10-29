@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/bernardo/Projects/TpAEDS_Pok-mon/main.c" "CMakeFiles/programa.dir/main.c.o" "gcc" "CMakeFiles/programa.dir/main.c.o.d"
-  "/home/bernardo/Projects/TpAEDS_Pok-mon/sources/CentroPesquisa.c" "CMakeFiles/programa.dir/sources/CentroPesquisa.c.o" "gcc" "CMakeFiles/programa.dir/sources/CentroPesquisa.c.o.d"
-  "/home/bernardo/Projects/TpAEDS_Pok-mon/sources/PokeLista.c" "CMakeFiles/programa.dir/sources/PokeLista.c.o" "gcc" "CMakeFiles/programa.dir/sources/PokeLista.c.o.d"
-  "/home/bernardo/Projects/TpAEDS_Pok-mon/sources/Pokemon.c" "CMakeFiles/programa.dir/sources/Pokemon.c.o" "gcc" "CMakeFiles/programa.dir/sources/Pokemon.c.o.d"
-  "/home/bernardo/Projects/TpAEDS_Pok-mon/sources/Treinador.c" "CMakeFiles/programa.dir/sources/Treinador.c.o" "gcc" "CMakeFiles/programa.dir/sources/Treinador.c.o.d"
-  "/home/bernardo/Projects/TpAEDS_Pok-mon/sources/function_call.c" "CMakeFiles/programa.dir/sources/function_call.c.o" "gcc" "CMakeFiles/programa.dir/sources/function_call.c.o.d"
+  "/home/p4t04zul/vs code/TPAEDS/main.c" "CMakeFiles/programa.dir/main.c.o" "gcc" "CMakeFiles/programa.dir/main.c.o.d"
+  "/home/p4t04zul/vs code/TPAEDS/sources/CentroPesquisa.c" "CMakeFiles/programa.dir/sources/CentroPesquisa.c.o" "gcc" "CMakeFiles/programa.dir/sources/CentroPesquisa.c.o.d"
+  "/home/p4t04zul/vs code/TPAEDS/sources/PokeLista.c" "CMakeFiles/programa.dir/sources/PokeLista.c.o" "gcc" "CMakeFiles/programa.dir/sources/PokeLista.c.o.d"
+  "/home/p4t04zul/vs code/TPAEDS/sources/Pokemon.c" "CMakeFiles/programa.dir/sources/Pokemon.c.o" "gcc" "CMakeFiles/programa.dir/sources/Pokemon.c.o.d"
+  "/home/p4t04zul/vs code/TPAEDS/sources/Treinador.c" "CMakeFiles/programa.dir/sources/Treinador.c.o" "gcc" "CMakeFiles/programa.dir/sources/Treinador.c.o.d"
+  "/home/p4t04zul/vs code/TPAEDS/sources/function_call.c" "CMakeFiles/programa.dir/sources/function_call.c.o" "gcc" "CMakeFiles/programa.dir/sources/function_call.c.o.d"
   "" "programa" "gcc" "CMakeFiles/programa.dir/link.d"
   )
 

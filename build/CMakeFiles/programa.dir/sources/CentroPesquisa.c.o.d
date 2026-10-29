@@ -1,5 +1,5 @@
 CMakeFiles/programa.dir/sources/CentroPesquisa.c.o: \
- /home/bernardo/Projects/TpAEDS_Pok-mon/sources/CentroPesquisa.c \
+ /home/p4t04zul/vs\ code/TPAEDS/sources/CentroPesquisa.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
@@ -34,6 +34,6 @@ CMakeFiles/programa.dir/sources/CentroPesquisa.c.o: \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-float.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/CentroPesquisa.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h
+ /home/p4t04zul/vs\ code/TPAEDS/headers/CentroPesquisa.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/PokeLista.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/Pokemon.h

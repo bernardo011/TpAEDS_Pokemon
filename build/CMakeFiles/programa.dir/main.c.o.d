@@ -1,10 +1,10 @@
-CMakeFiles/programa.dir/main.c.o: \
- /home/bernardo/Projects/TpAEDS_Pok-mon/main.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
- /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+CMakeFiles/programa.dir/main.c.o: /home/p4t04zul/vs\ code/TPAEDS/main.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
+ /usr/include/bits/libc-header-start.h /usr/include/features.h \
+ /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
@@ -15,14 +15,14 @@ CMakeFiles/programa.dir/main.c.o: \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
  /usr/include/bits/floatn-common.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/function_call.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Treinador.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/CentroPesquisa.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/TimePokemon.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/function_call.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/PokeLista.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/Pokemon.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/Pokemon.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/Treinador.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/PokeLista.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/CentroPesquisa.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/TimePokemon.h \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
  /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \

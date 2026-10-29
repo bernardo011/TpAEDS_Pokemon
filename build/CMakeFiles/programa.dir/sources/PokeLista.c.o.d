@@ -1,13 +1,13 @@
 CMakeFiles/programa.dir/sources/PokeLista.c.o: \
- /home/bernardo/Projects/TpAEDS_Pok-mon/sources/PokeLista.c \
+ /home/p4t04zul/vs\ code/TPAEDS/sources/PokeLista.c \
  /usr/include/stdc-predef.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
- /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
- /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/PokeLista.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/Pokemon.h /usr/include/stdio.h \
+ /usr/include/bits/libc-header-start.h /usr/include/features.h \
+ /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \

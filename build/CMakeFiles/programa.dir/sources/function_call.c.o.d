@@ -1,14 +1,14 @@
 CMakeFiles/programa.dir/sources/function_call.c.o: \
- /home/bernardo/Projects/TpAEDS_Pok-mon/sources/function_call.c \
+ /home/p4t04zul/vs\ code/TPAEDS/sources/function_call.c \
  /usr/include/stdc-predef.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/function_call.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/CentroPesquisa.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/PokeLista.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Treinador.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/sources/TimePokemon.c \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/function_call.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/CentroPesquisa.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/PokeLista.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/Pokemon.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/PokeLista.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/Pokemon.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/Treinador.h \
+ /home/p4t04zul/vs\ code/TPAEDS/sources/TimePokemon.c \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -40,7 +40,7 @@ CMakeFiles/programa.dir/sources/function_call.c.o: \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-float.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/TimePokemon.h \
+ /home/p4t04zul/vs\ code/TPAEDS/headers/TimePokemon.h \
  /usr/include/string.h /usr/include/bits/types/locale_t.h \
  /usr/include/bits/types/__locale_t.h /usr/include/strings.h \
  /usr/include/math.h /usr/include/bits/math-vector.h \

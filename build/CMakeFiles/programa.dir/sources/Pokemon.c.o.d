@@ -1,5 +1,5 @@
 CMakeFiles/programa.dir/sources/Pokemon.c.o: \
- /home/bernardo/Projects/TpAEDS_Pok-mon/sources/Pokemon.c \
+ /home/p4t04zul/vs\ code/TPAEDS/sources/Pokemon.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
@@ -17,5 +17,4 @@ CMakeFiles/programa.dir/sources/Pokemon.c.o: \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
  /usr/include/bits/floatn-common.h /usr/include/string.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/strings.h \
- /home/bernardo/Projects/TpAEDS_Pok-mon/headers/Pokemon.h
+ /usr/include/strings.h /home/p4t04zul/vs\ code/TPAEDS/headers/Pokemon.h

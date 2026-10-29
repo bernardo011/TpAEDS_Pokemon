@@ -1,0 +1,3 @@
+/home/bernardo/Downloads/TpAEDS_Pokemon-gabriel/build/CMakeFiles/programa.dir
+/home/bernardo/Downloads/TpAEDS_Pokemon-gabriel/build/CMakeFiles/edit_cache.dir
+/home/bernardo/Downloads/TpAEDS_Pokemon-gabriel/build/CMakeFiles/rebuild_cache.dir

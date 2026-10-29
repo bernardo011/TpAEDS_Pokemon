@@ -326,6 +326,7 @@ CMakeFiles/programa.dir/sources/function_call.c.o
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
  /usr/include/bits/thread-shared-types.h
+ /usr/include/bits/time.h
  /usr/include/bits/time64.h
  /usr/include/bits/timesize.h
  /usr/include/bits/types.h
@@ -342,8 +343,10 @@ CMakeFiles/programa.dir/sources/function_call.c.o
  /usr/include/bits/types/locale_t.h
  /usr/include/bits/types/sigset_t.h
  /usr/include/bits/types/struct_FILE.h
+ /usr/include/bits/types/struct_itimerspec.h
  /usr/include/bits/types/struct_timespec.h
  /usr/include/bits/types/struct_timeval.h
+ /usr/include/bits/types/struct_tm.h
  /usr/include/bits/types/time_t.h
  /usr/include/bits/types/timer_t.h
  /usr/include/bits/typesizes.h
@@ -365,6 +368,7 @@ CMakeFiles/programa.dir/sources/function_call.c.o
  /usr/include/sys/cdefs.h
  /usr/include/sys/select.h
  /usr/include/sys/types.h
+ /usr/include/time.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
 

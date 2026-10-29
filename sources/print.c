@@ -24,3 +24,4 @@ void combinations (int v[], int start, int n, int k, int maxk) {
                 combinations (v, i+1, n, k+1, maxk);
         }
 }
+

@@ -49,8 +49,6 @@ int main(){
     ImprimePokemons(&trainer2->TimeTreinador);
     EsvaziaPokeLista(&poke_center->EstoquePokemon);
     EsvaziaPokeLista(&(*MelhorTime).MelhorTime);
-    EsvaziaPokeLista(&trainer1->TimeTreinador);
-    EsvaziaPokeLista(&trainer2->TimeTreinador);
     free(v);
     free(MelhorTime);
     free(poke_center);

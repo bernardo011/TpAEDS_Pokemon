@@ -42,7 +42,7 @@ void ImprimePokemons (PokeLista *lista){
     } else {
         PokeCelula *aux = lista -> Primeiro;
         while (aux){
-            printf("ID: %-4d| Nome: %-15s| Tipo: %-15s| Poder: %-2d| Energia: %-2d\n", aux -> pokemon.pokedex, aux->pokemon.nome, aux->pokemon.tipo, aux->pokemon.poder, aux->pokemon.energia);
+            printf("ID: %-4d| Nome: %-15s| Tipo: %-15s| Poder: %-3d| Energia: %-3d\n", aux -> pokemon.pokedex, aux->pokemon.nome, aux->pokemon.tipo, aux->pokemon.poder, aux->pokemon.energia);
             aux = (*aux).pProx;
         }
     }    

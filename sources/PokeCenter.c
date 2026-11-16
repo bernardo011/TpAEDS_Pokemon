@@ -34,22 +34,26 @@ void OrdenaSelectionSort (PokeCenter *NovoPokeCenter){
     if (PokeListaEVazia(&NovoPokeCenter -> Pokemons))
         return;
     else {
+        printf("\n=== ORDENANDO A LISTA COM SELECTION SORT ===\n");
+        int comp, trocas;
         clock_t inicio, fim;
         double tempo_total;
         inicio = clock();
         for (int i = 0; i < NovoPokeCenter -> Pokemons.Ultimo - 1       ; i++){
             int menor = i;
             for (int j = i+1; j<NovoPokeCenter -> Pokemons.Ultimo; j++){
+                comp++;
                 if (NovoPokeCenter -> Pokemons.MochilaPokemon[j].poder < NovoPokeCenter -> Pokemons.MochilaPokemon[menor].poder){
                     menor = j;
                 }  
             }
+            trocas++;
             Pokemon aux = NovoPokeCenter -> Pokemons.MochilaPokemon[menor];
             NovoPokeCenter -> Pokemons.MochilaPokemon[menor] = NovoPokeCenter -> Pokemons.MochilaPokemon[i];
             NovoPokeCenter -> Pokemons.MochilaPokemon[i] = aux;  
         }
         fim = clock();
         tempo_total = (double)(fim-inicio)/CLOCKS_PER_SEC;
-        printf("\nTempo de execução %f segundos\n", tempo_total);
+        printf("\nTempo de execução %f segundos\nTotal de comparações: %d\nTotal de trocas: %d\n", tempo_total, comp, trocas);
     }
 }

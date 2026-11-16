@@ -1,7 +1,7 @@
 #include <stdio.h>
 #ifndef POKELISTA_H
 #define POKELISTA_H
-#define MAX 10000
+#define MAX 50000
 #include "Pokemon.h"
 
 typedef struct pokelista {

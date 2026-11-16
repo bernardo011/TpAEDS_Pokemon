@@ -2,6 +2,7 @@
 #include "Pokemon.h"
 #include "PokeLista.h"
 #include <stdio.h>
+#include <time.h>
 
 void InicializaPokeCenter (PokeCenter *NovoPokeCenter){
     FILE *arq;
@@ -9,6 +10,7 @@ void InicializaPokeCenter (PokeCenter *NovoPokeCenter){
     if (arq == NULL) {
         printf("\nErro ao abrir o arquivo de entrada.\n");
     } else {
+        // Insere os pokémons no vetor caso o número total de pokémons não exceda 10000.
         InicializaPokeLista (&NovoPokeCenter -> Pokemons);
         Pokemon Lucario;
         int poder, pokedex;
@@ -28,9 +30,13 @@ void InicializaPokeCenter (PokeCenter *NovoPokeCenter){
 }
 
 void OrdenaSelectionSort (PokeCenter *NovoPokeCenter){
+    // Ordenação simples feita com Selection Sort
     if (PokeListaEVazia(&NovoPokeCenter -> Pokemons))
         return;
     else {
+        clock_t inicio, fim;
+        double tempo_total;
+        inicio = clock();
         for (int i = 0; i < NovoPokeCenter -> Pokemons.Ultimo - 1       ; i++){
             int menor = i;
             for (int j = i+1; j<NovoPokeCenter -> Pokemons.Ultimo; j++){
@@ -42,5 +48,8 @@ void OrdenaSelectionSort (PokeCenter *NovoPokeCenter){
             NovoPokeCenter -> Pokemons.MochilaPokemon[menor] = NovoPokeCenter -> Pokemons.MochilaPokemon[i];
             NovoPokeCenter -> Pokemons.MochilaPokemon[i] = aux;  
         }
+        fim = clock();
+        tempo_total = (double)(fim-inicio)/CLOCKS_PER_SEC;
+        printf("\nTempo de execução %f segundos\n", tempo_total);
     }
 }

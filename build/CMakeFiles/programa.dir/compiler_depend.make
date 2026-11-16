@@ -36,11 +36,14 @@ CMakeFiles/programa.dir/sources/PokeCenter.c.o: /home/bernardo/Projects/C/Projet
   /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/headers/PokeCenter.h \
   /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/headers/PokeLista.h \
   /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/headers/Pokemon.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/long-double.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/types.h \
@@ -48,9 +51,18 @@ CMakeFiles/programa.dir/sources/PokeCenter.c.o: /home/bernardo/Projects/C/Projet
   /usr/include/bits/types/__FILE.h \
   /usr/include/bits/types/__fpos64_t.h \
   /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/wordsize.h \
   /usr/include/features-time64.h \
@@ -60,6 +72,7 @@ CMakeFiles/programa.dir/sources/PokeCenter.c.o: /home/bernardo/Projects/C/Projet
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/sys/cdefs.h \
+  /usr/include/time.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
 
@@ -159,13 +172,25 @@ CMakeFiles/programa.dir/sources/PokeLista.c.o:
 
 CMakeFiles/programa.dir/sources/PokeCenter.c.o:
 
+CMakeFiles/programa.dir/main.c.o:
+
+/usr/lib/libmvec.so.1:
+
+/usr/lib/libm.so.6:
+
+/usr/lib/libc.so.6:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.so:
+
 /usr/include/sys/cdefs.h:
 
 /usr/include/stdc-predef.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/stdio.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h:
 
@@ -209,6 +234,8 @@ CMakeFiles/programa.dir/sources/PokeCenter.c.o:
 
 /usr/include/bits/time64.h:
 
+/usr/include/bits/time.h:
+
 /usr/include/gnu/stubs-64.h:
 
 /usr/include/bits/libc-header-start.h:
@@ -217,62 +244,70 @@ CMakeFiles/programa.dir/sources/PokeCenter.c.o:
 
 /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/headers/PokeCenter.h:
 
+/usr/lib/libc_nonshared.a:
+
+/usr/include/bits/types.h:
+
 /usr/include/bits/types/__mbstate_t.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h:
 
 /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/sources/PokeCenter.c:
 
+/usr/include/bits/timesize.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/bits/endianness.h:
+
 /usr/include/bits/types/__locale_t.h:
 
-/usr/lib/Scrt1.o:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
+
+/home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/sources/PokeLista.c:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/types/locale_t.h:
 
 /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/sources/Pokemon.c:
 
-/usr/include/bits/types/locale_t.h:
+/usr/lib/Scrt1.o:
 
 /usr/lib/libstdc++.so.6:
 
 /usr/lib/crti.o:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic_asneeded.so:
 
 /usr/lib/crtn.o:
+
+/usr/include/bits/types/clock_t.h:
 
 /usr/lib/libasan.so:
 
 /usr/lib/libgcc_s.so.1:
 
 /usr/lib/libm.so:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
-
-/usr/include/bits/long-double.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.so:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
-
-/usr/include/bits/types.h:
-
-/usr/lib/libc_nonshared.a:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
-
-/home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/sources/PokeLista.c:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so:
-
-/usr/lib/ld-linux-x86-64.so.2:
-
-/usr/lib/libm.so.6:
-
-/usr/lib/libc.so.6:
-
-/usr/lib/libmvec.so.1:
-
-CMakeFiles/programa.dir/main.c.o:

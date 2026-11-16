@@ -20,4 +20,12 @@ CMakeFiles/programa.dir/sources/PokeCenter.c.o: \
  /usr/include/bits/floatn-common.h \
  /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/headers/Pokemon.h \
  /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/headers/Pokemon.h \
- /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/headers/PokeLista.h
+ /home/bernardo/Projects/C/ProjetosC/Segundo\ Semestre/TrabalhoAEDS/headers/PokeLista.h \
+ /usr/include/time.h /usr/include/bits/time.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/time_t.h \
+ /usr/include/bits/types/struct_tm.h \
+ /usr/include/bits/types/struct_timespec.h /usr/include/bits/endian.h \
+ /usr/include/bits/endianness.h /usr/include/bits/types/clockid_t.h \
+ /usr/include/bits/types/timer_t.h \
+ /usr/include/bits/types/struct_itimerspec.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h

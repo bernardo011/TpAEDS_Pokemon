@@ -1,0 +1,3 @@
+/home/bernardo/Projects/C/ProjetosC/Segundo Semestre/TrabalhoAEDS/build/CMakeFiles/programa.dir
+/home/bernardo/Projects/C/ProjetosC/Segundo Semestre/TrabalhoAEDS/build/CMakeFiles/edit_cache.dir
+/home/bernardo/Projects/C/ProjetosC/Segundo Semestre/TrabalhoAEDS/build/CMakeFiles/rebuild_cache.dir

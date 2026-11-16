@@ -1,0 +1,1 @@
+/usr/bin/cc -fsanitize=address -Wl,--dependency-file=CMakeFiles/programa.dir/link.d CMakeFiles/programa.dir/main.c.o CMakeFiles/programa.dir/sources/PokeCenter.c.o CMakeFiles/programa.dir/sources/PokeLista.c.o CMakeFiles/programa.dir/sources/Pokemon.c.o -o programa  -lm
